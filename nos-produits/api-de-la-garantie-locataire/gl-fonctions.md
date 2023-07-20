@@ -1,7 +1,13 @@
+---
+description: Cette page regroupe toutes les foncions inhérentes à l'Api Garantie locataire.
+---
+
 # 🔧 GL fonctions
 
 {% hint style="info" %}
-**Good to know:** All the methods shown below are synced to an example Swagger file URL and are kept up to date automatically with changes to the API.
+**Bon à Savoir:** Vous pouvez consulter la documentation GraphQL de cette API, ainsi que la tester via l'outil [Apollo Studio](https://studio.apollographql.com/public/Cautioneo-API/explorer?variant=staging)
+
+Cette API suit les conventions de schema [GraphQL Relay](https://relay.dev/)
 {% endhint %}
 
 ## Créer un utilisateur
@@ -152,8 +158,9 @@ Ces informations sont catégorisées selon la situation professionnelle de l'uti
 
 Une fonction de l'API vous permet également de les connaitre pour une souscription donnée [ici](https://cautioneo.github.io/cautioneo-design/fr-api-doc.html#getSubscriptionNeededDocumentsCategories).
 
-<pre class="language-graphql"><code class="lang-graphql"><strong>mutation {
-</strong>  addDocumentBase64(
+```graphql
+mutation {
+  addDocumentBase64(
     input: {
       clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       documentableId: "ID"
@@ -171,7 +178,7 @@ Une fonction de l'API vous permet également de les connaitre pour une souscript
     clientMutationId
   }
 }
-</code></pre>
+```
 
 ## Obtenir les informations d'un compte utilisateur
 

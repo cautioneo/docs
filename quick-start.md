@@ -4,25 +4,19 @@ description: Vous trouverez ici toutes les informations relatives à notre api !
 
 # Quick Start
 
-{% hint style="info" %}
-
-{% endhint %}
-
 ## GraphQL Docs
 
-Vous pouvez consulter la documentation GraphQL de cette API, ainsi que la tester via l'outil [Apollo Studio](https://studio.apollographql.com/public/Cautioneo-API/explorer?variant=staging)
+{% hint style="info" %}
+**Bon à Savoir:** Vous pouvez consulter la documentation GraphQL de cette API, ainsi que la tester via l'outil [Apollo Studio](https://studio.apollographql.com/public/Cautioneo-API/explorer?variant=staging)
 
 Cette API suit les conventions de schema [GraphQL Relay](https://relay.dev/)
+{% endhint %}
 
 ## Environnement URL
 
 Production: [https://api.cautioneo.com/graphql](https://api.cautioneo.com/graphql)
 
 Staging: [ https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-staging.caut.io/graphq)l
-
-{% hint style="info" %}
-**Good to know:** Using tabs to separate out different languages is a great way to present technical examples or code documentation without cramming your docs with extra sections or pages per language.
-{% endhint %}
 
 ## Authorization <a href="#authorization" id="authorization"></a>
 
