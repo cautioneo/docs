@@ -167,3 +167,98 @@ mutation {
     }
  }
 ```
+
+## Valider l'abonnement&#x20;
+
+Cette fonction permet de valider l'abonnement dans le but de transmettre nos justificatifs
+
+```graphql
+mutation {
+    pbiSubscriptionSubmit(
+      input: { 
+          id: "ID" 
+          ownerSendDocuments: true 
+          }
+    ) {
+      errors
+    subscription {
+      id
+      state
+      situation
+      createdAt
+      updatedAt
+      }
+    }
+  
+```
+
+## Reception des documents&#x20;
+
+Cette fonction permet de transmettre les documents du ou des locataires.
+
+```graphql
+query getPbiSubscriptionDocuments($id: ID!) {
+    node(id: $id) {
+      ... on PbiSubscription {
+        property {
+          landlord {
+            user {
+              firstName
+              lastName
+            }
+          }
+        }
+        state
+        comment
+        situation
+        renters {
+          nodes {
+            id
+          }
+        }
+        neededDocumentsLabelsByOwner {
+          labels {
+            category
+            title
+          }
+          owner {
+            id
+            category
+            firstName
+            lastName
+          }
+          referents {
+            labels {
+              category
+              title
+            }
+            owner {
+              id
+              category
+              firstName
+              lastName
+            }
+          }
+        }
+        documents {
+          nodes {
+            id
+            fileName
+            previewUrl
+            label {
+              category
+              title
+            }
+            owner {
+              id
+              category
+              firstName
+              lastName
+            }
+          }
+        }
+      }
+    }
+  }
+```
+
