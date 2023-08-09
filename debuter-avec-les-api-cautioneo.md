@@ -2,7 +2,7 @@
 description: Vous trouverez ici toutes les informations relatives à notre api !
 ---
 
-# Quick Start
+# 🧑🎓 Débuter avec Les Api Cautioneo
 
 ## GraphQL Docs
 
@@ -56,53 +56,14 @@ _Dans le header de la requête HTTP_
 { "Authorization": "Bearer ACCESS_TOKEN" }
 ```
 
-## Faites votre première requête.
+## Envie d'en savoir plus ?&#x20;
 
-Pour faire votre première requête, envoyez une requête authentifiée a la méthode `createUser` de l'api. Cela créera un nouveau compte utilisateur. &#x20;
+Trouvez l'ensemble de la documentions relative à nos Divers Api dans les rubriques ci-dessous.
 
-```graphql
-mutation {
-  createUser(
-    input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
-      email: "test@test.org"
-      firstName: "John"
-      lastName: "Doe"
-      acceptTerms: true
-      acceptProspecting: true
-      birthplace: "Lille"
-      birthdate: "1990-04-01"
-      phoneNumber: "+3332151606060"
-      address: {
-        street: "165 avenue de Bretagne"
-        postalcode: "59800"
-        city: "Lille"
-        country: "FR"
-      }
-      category: CDI
-      civilStatus: SINGLE
-      gender: MALE
-      nationality: "FR"
-      employmentContractEndOn: "2022-07-16"
-      oauth: {
-        uid: ""
-        provider: FACEBOOK
-      }
-    }
-  ) {
-    user {
-      id
-      email
-    }
-    errors
-    clientMutationId
-  }
-}
-```
+{% content-ref url="nos-produits/api-de-la-garantie-locataire/" %}
+[api-de-la-garantie-locataire](nos-produits/api-de-la-garantie-locataire/)
+{% endcontent-ref %}
 
-{% hint style="info" %}
-**Good to know:** You can use the API Method block to fully document an API method. You can also sync your API blocks with an OpenAPI file or URL to auto-populate them.
-{% endhint %}
-
-Take a look at how you might call this method using our official libraries, or via `curl`:
-
+{% content-ref url="nos-produits/api-de-la-garantie-loyer-impaye/" %}
+[api-de-la-garantie-loyer-impaye](nos-produits/api-de-la-garantie-loyer-impaye/)
+{% endcontent-ref %}

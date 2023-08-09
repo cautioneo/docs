@@ -1,21 +1,11 @@
-# API de la Garantie Locataire
-
-Dive into the specifics of each API endpoint by checking out our complete documentation.
-
-## Pets
-
-All the methods associated with `CRUD`ing some pets. Which isn't as weird as it sounds:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+# 🤝 API de la Garantie Locataire
 
 ## Users
 
 Everything related to users:
 
-{% content-ref url="gl-fonctions.md" %}
-[gl-fonctions.md](gl-fonctions.md)
+{% content-ref url="gl-fonctions/" %}
+[gl-fonctions](gl-fonctions/)
 {% endcontent-ref %}
 
 {% hint style="info" %}

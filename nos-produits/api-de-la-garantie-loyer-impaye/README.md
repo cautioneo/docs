@@ -1,21 +1,21 @@
-# API de la Garantie Loyer Impayé
+---
+description: >-
+  Retrouvez dans cette rubrique tous les informations relatives à l'api des
+  Garantie Loyer Impayé Cautionéo.
+---
+
+# 🔐 API de la Garantie Loyer Impayé
 
 Dive into the specifics of each API endpoint by checking out our complete documentation.
 
-## Pets
-
 All the methods associated with `CRUD`ing some pets. Which isn't as weird as it sounds:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
 
 ## Utilisateurs
 
 Everything related to users:
 
-{% content-ref url="../api-de-la-garantie-locataire/gl-fonctions.md" %}
-[gl-fonctions.md](../api-de-la-garantie-locataire/gl-fonctions.md)
+{% content-ref url="../api-de-la-garantie-locataire/gl-fonctions/" %}
+[gl-fonctions](../api-de-la-garantie-locataire/gl-fonctions/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
