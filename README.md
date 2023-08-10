@@ -12,8 +12,8 @@ Bienvenu dans la documentation de l'api Cautioneo ! Vous trouverez ici toutes le
 
 Vous êtes prêt à faire vos premières requêtes ? Essayez Quick start immédiatement !
 
-{% content-ref url="debuter-avec-les-api-cautioneo.md" %}
-[debuter-avec-les-api-cautioneo.md](debuter-avec-les-api-cautioneo.md)
+{% content-ref url="quick-start.md" %}
+[quick-start.md](quick-start.md)
 {% endcontent-ref %}
 
 ## Envie d'approfondir ?&#x20;
