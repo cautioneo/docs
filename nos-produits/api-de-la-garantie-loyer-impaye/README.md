@@ -14,8 +14,8 @@ All the methods associated with `CRUD`ing some pets. Which isn't as weird as it 
 
 Everything related to users:
 
-{% content-ref url="../api-de-la-garantie-locataire/gl-fonctions.md" %}
-[gl-fonctions.md](../api-de-la-garantie-locataire/gl-fonctions.md)
+{% content-ref url="../api-de-la-garantie-locataire/les-fonctions/" %}
+[les-fonctions](../api-de-la-garantie-locataire/les-fonctions/)
 {% endcontent-ref %}
 
 {% hint style="info" %}

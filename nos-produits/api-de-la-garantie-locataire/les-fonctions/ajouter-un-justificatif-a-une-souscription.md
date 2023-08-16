@@ -1,10 +1,6 @@
----
-description: >-
-  Cette fonction permet d'ajouter un document justificatif de revenus, de
-  capital ou de situation d'un utilisateur.
----
-
 # Ajouter un justificatif à une souscription
+
+### Cette fonction permet d'ajouter un document justificatif de revenus, de capital ou de situation d'un utilisateur.
 
 Ces informations sont catégorisées selon la situation professionnelle de l'utilisateur, la liste est disponible [ici](https://cautioneo.github.io/cautioneo-design/csp.html).
 

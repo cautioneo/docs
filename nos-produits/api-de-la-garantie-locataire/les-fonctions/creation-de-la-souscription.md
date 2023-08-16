@@ -1,8 +1,6 @@
----
-description: Cette fonction permet de créer une souscription / un dossier.
----
-
 # Création de la souscription
+
+### Cette fonction permet de créer une souscription / un dossier.
 
 ```graphql
 mutation {

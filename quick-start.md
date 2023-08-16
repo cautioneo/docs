@@ -22,8 +22,6 @@ Staging: [ https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-s
 
 Cautioneo vous a transmit un `CLIENT_ID` et un `CLIENT_SECRET`
 
-{% tabs %}
-{% tab title="curl" %}
 ```
 curl -F grant_type=client_credentials \
      -F client_id=YOUR_CLIENT_ID \
@@ -31,8 +29,6 @@ curl -F grant_type=client_credentials \
      -F redirect_uri=https://YOUR_HOST \
      -X POST https://{api.cautioneo.com | cautioneo-app-staging.caut.io}/oauth/tok
 ```
-{% endtab %}
-{% endtabs %}
 
 Cette requête OAuth vous retourne donc un JSON contenant un `ACCESS_TOKEN`&#x20;
 

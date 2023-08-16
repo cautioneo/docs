@@ -1,10 +1,6 @@
----
-description: >-
-  Vous avez envie d'en connaitre d'avantage sur notre Api de Garantie Locataire
-  ? C'est par Ici !
----
-
 # 🔍 Débuter avec l'api de la GL
+
+### Vous avez envie d'en connaitre d'avantage sur notre Api de Garantie Locataire ? C'est par Ici !
 
 Nous allons dans un premier temps vous donner un exemple de requête attendue par notre api.
 

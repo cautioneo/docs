@@ -4,8 +4,8 @@
 
 Everything related to users:
 
-{% content-ref url="gl-fonctions.md" %}
-[gl-fonctions.md](gl-fonctions.md)
+{% content-ref url="les-fonctions/" %}
+[les-fonctions](les-fonctions/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
