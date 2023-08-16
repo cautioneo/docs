@@ -8,7 +8,7 @@ Ci-dessous un exemple de requête (appelée "Query" en GraphQL ) nous permettant
 
 {% code fullWidth="false" %}
 ```graphql
-  mutation createUser(
+mutation createUser(
     $email: Email!
     $password: String!
     $accept_terms: Boolean!
