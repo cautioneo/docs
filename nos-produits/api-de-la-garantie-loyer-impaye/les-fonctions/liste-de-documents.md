@@ -1,12 +1,6 @@
----
-description: >-
-  Cette fonction permet de récupérer la liste des documents transmis du ou des
-  locataires.
----
-
 # Liste de documents
 
-
+### Cette fonction permet de récupérer la liste des documents transmis du ou des locataires.
 
 ```graphql
 query getPbiSubscriptionDocuments($id: ID!) {

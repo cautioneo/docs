@@ -1,8 +1,6 @@
----
-description: Cette fonction permet la mise à jour des données du bien immobilier
----
-
 # Mettre à jour  un bien immobilier
+
+### Cette fonction permet la mise à jour des données du bien immobilier
 
 ```graphql
 mutation {

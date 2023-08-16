@@ -1,10 +1,6 @@
----
-description: >-
-  Cette fonction permet de valider l'abonnement dans le but de transmettre nos
-  justificatifs
----
-
 # Valider l'abonnement
+
+### Cette fonction permet de valider l'abonnement dans le but de transmettre nos justificatifs
 
 ```graphql
 mutation {

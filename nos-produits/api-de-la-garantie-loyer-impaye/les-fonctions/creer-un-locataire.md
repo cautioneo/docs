@@ -1,10 +1,6 @@
----
-description: >-
-  Cette fonction permet de créer un ou plusieurs locataires. Lesquels seront
-  couvert par la garantie.
----
-
 # Créer un locataire
+
+### Cette fonction permet de créer un ou plusieurs locataires. Lesquels seront couvert par la garantie.
 
 ```graphql
 mutation {

@@ -1,6 +1,6 @@
 # Créer un état financier
 
-Cette fonction permet de créer l'état financier d'un locataire ou d'un référent&#x20;
+### Cette fonction permet de créer l'état financier d'un locataire ou d'un référent&#x20;
 
 ```graphql
 mutation {

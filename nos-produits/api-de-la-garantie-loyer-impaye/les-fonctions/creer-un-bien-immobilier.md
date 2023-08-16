@@ -1,8 +1,6 @@
----
-description: Cette fonction permet de créer une propriété
----
-
 # Créer un bien immobilier
+
+### Cette fonction permet de créer une propriété
 
 ```graphql
 mutation {
