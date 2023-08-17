@@ -46,7 +46,6 @@ BUILD() {
     then
         {
             echo "File docx exist"
-            cat $FILE
         }
     else
         {
@@ -129,17 +128,13 @@ COPY_OUTPUT() {
 PUSH_REPO() {
     echo '[INFO] Add new commit for branch...'
 
-    env
 
     git config user.name "$GITHUB_ACTOR"
     git config user.email "$USER_EMAIL"
-    # git status
     git add --all
     git commit -m "Deploy to Github Pages (from $GITHUB_SHA)"
 
     echo '[INFO] Push to result...'
-    # git status
-    # git branch -a
     git push origin $DEFAULT_BRANCH
     echo '[INFO] Deploy completed...!'
 }
