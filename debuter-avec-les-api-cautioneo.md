@@ -2,7 +2,7 @@
 description: Vous trouverez ici toutes les informations relatives à notre api !
 ---
 
-# 🧑🎓 Débuter avec Les Api Cautioneo
+# 🧑🎓 🧑🎓 Débuter avec Les Api Cautioneo
 
 ## GraphQL Docs
 
@@ -55,11 +55,3 @@ _Dans le header de la requête HTTP_
 ## Envie d'en savoir plus ?&#x20;
 
 Trouvez l'ensemble de la documentions relative à nos Divers Api dans les rubriques ci-dessous.
-
-{% content-ref url="nos-produits/api-de-la-garantie-locataire/" %}
-[api-de-la-garantie-locataire](nos-produits/api-de-la-garantie-locataire/)
-{% endcontent-ref %}
-
-{% content-ref url="nos-produits/api-de-la-garantie-loyer-impaye/" %}
-[api-de-la-garantie-loyer-impaye](nos-produits/api-de-la-garantie-loyer-impaye/)
-{% endcontent-ref %}

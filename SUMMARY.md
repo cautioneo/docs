@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏢 Api Cautioneo !](README.md)
-* [🧑🎓 Débuter avec Les Api Cautioneo](quick-start.md)
+* [🧑🎓 🧑🎓 Débuter avec Les Api Cautioneo](debuter-avec-les-api-cautioneo.md)
 
 ## Nos produits
 
@@ -27,11 +27,16 @@
     * [Mettre à jour les données utilisateurs.](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-les-donnees-utilisateurs..md)
     * [Créer un locataire](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-locataire.md)
     * [Créer un bien immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-bien-immobilier.md)
-    * [Mettre à jour  un bien immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-un-bien-immobilier.md)
+    * [Mettre à jour un bien immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-un-bien-immobilier.md)
     * [Liste de documents](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md)
     * [Valider l'abonnement](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-labonnement.md)
     * [Créer un référent](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-referent.md)
     * [Créer un état financier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-etat-financier.md)
     * [Création des informations de carte bancaire](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creation-des-informations-de-carte-bancaire.md)
-    * [Mettre à jour le SIREN d'un agent immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-le-siren-dun-agent-immobilier.md)
     * [Créer un abonnement](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-abonnement.md)
+    * [Obtenir le certificat d'un utilisateur](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/obtenir-le-certificat-dun-utilisateur.md)
+    * [Invalider le certificat d'un utilisateur](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/invalider-le-certificat-dun-utilisateur.md)
+    * [Renouveler un certificat utilisateur](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/renouveler-un-certificat-utilisateur.md)
+    * [Mettre à jour le SIREN d'un agent immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-le-siren-dun-agent-immobilier.md)
+    * [Créer un compte bancaire STRIPE](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md)
+    * [Page](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/page.md)

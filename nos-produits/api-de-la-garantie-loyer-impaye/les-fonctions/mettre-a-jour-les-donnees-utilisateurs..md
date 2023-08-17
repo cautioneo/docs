@@ -1,6 +1,6 @@
 # Mettre à jour les données utilisateurs.
 
-Cette fonction permet de mettre à jour un compte utilisateur. Elle prend en paramètre un objet `input` contenant les informations nécessaires à la mise à jour du compte.
+### Cette fonction permet de mettre à jour un compte utilisateur. Elle prend en paramètre un objet `input` contenant les informations nécessaires à la mise à jour du compte.
 
 ```graphql
 mutation {
