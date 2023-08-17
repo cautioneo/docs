@@ -1,6 +1,6 @@
 # Créer un référent
 
-### Cette fonction sert à créer un référent Garantie loyer impayé&#x20;
+Cette fonction sert à créer un référent Garantie loyer impayé&#x20;
 
 ```graphql
 mutation {

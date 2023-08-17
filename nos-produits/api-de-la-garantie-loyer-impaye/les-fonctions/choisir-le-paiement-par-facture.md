@@ -1,6 +1,6 @@
 # Choisir le paiement par facture
 
-### Cette fonction permet d'envoyer un mail à l'utilisateur pour lui donner le choix de paiement soit par carte bancaire soit par virement ou prélèvement.
+Cette fonction permet d'envoyer un mail à l'utilisateur pour lui donner le choix de paiement soit par carte bancaire soit par virement ou prélèvement.
 
 ```graphql
 mutation createInvoiceBilling(
