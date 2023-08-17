@@ -24,6 +24,7 @@
 * [🔐 API de la Garantie Loyer Impayé](nos-produits/api-de-la-garantie-loyer-impaye/README.md)
   * [🔍 Débuter avec l'api de la GLI](nos-produits/api-de-la-garantie-loyer-impaye/debuter-avec-lapi-de-la-gli.md)
   * [🔧 Les fonctions](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/README.md)
+    * [Renouveler l'invitation](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/renouveler-linvitation.md)
     * [Mettre à jour les données utilisateurs.](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-les-donnees-utilisateurs..md)
     * [Créer un locataire](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-locataire.md)
     * [Créer un bien immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-bien-immobilier.md)
@@ -40,3 +41,4 @@
     * [Mettre à jour le SIREN d'un agent immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-le-siren-dun-agent-immobilier.md)
     * [Créer un compte bancaire STRIPE](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md)
     * [Choisir le paiement par facture](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/choisir-le-paiement-par-facture.md)
+    * [Inviter un locataire](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/inviter-un-locataire.md)

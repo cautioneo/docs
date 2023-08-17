@@ -2,7 +2,7 @@
 description: Vous trouverez ici toutes les informations relatives à notre api !
 ---
 
-# 🧑🎓 🧑🎓 Débuter avec Les Api Cautioneo
+# 🧑‍🎓 Débuter avec Les Api Cautioneo
 
 ## GraphQL Docs
 
@@ -22,12 +22,12 @@ Staging: [ https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-s
 
 Cautioneo vous a transmit un `CLIENT_ID` et un `CLIENT_SECRET`
 
-```
+```markup
 curl -F grant_type=client_credentials \
      -F client_id=YOUR_CLIENT_ID \
      -F client_secret=YOUR_CLIENT_SECRET \
      -F redirect_uri=https://YOUR_HOST \
-     -X POST https://{api.cautioneo.com | cautioneo-app-staging.caut.io}/oauth/tok
+     -X POST https://{api.cautioneo.com | cautioneo-app-staging.caut.io}/oauth/token
 ```
 
 Cette requête OAuth vous retourne donc un JSON contenant un `ACCESS_TOKEN`&#x20;
