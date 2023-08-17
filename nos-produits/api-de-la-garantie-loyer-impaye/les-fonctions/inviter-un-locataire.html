@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Créer un état financier · HonKit</title>
+        <title>Inviter un locataire · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -64,10 +64,8 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="creation-des-informations-de-carte-bancaire.html" />
     
-    
-    <link rel="prev" href="creer-un-referent.html" />
+    <link rel="prev" href="choisir-le-paiement-par-facture.html" />
     
 
     </head>
@@ -494,7 +492,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.2.9" data-path="creer-un-etat-financier.html">
+        <li class="chapter " data-level="2.2.2.9" data-path="creer-un-etat-financier.html">
             
                 <a href="creer-un-etat-financier.html">
             
@@ -611,7 +609,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.2.18" data-path="inviter-un-locataire.html">
+        <li class="chapter active" data-level="2.2.2.18" data-path="inviter-un-locataire.html">
             
                 <a href="inviter-un-locataire.html">
             
@@ -664,7 +662,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Créer un état financier</a>
+        <a href="../../.." >Inviter un locataire</a>
     </h1>
 </div>
 
@@ -679,36 +677,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="créer-un-état-financier">Créer un état financier</h1>
-<p>Cette fonction permet de créer l&apos;état financier d&apos;un locataire ou d&apos;un référent </p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
- createFinancialState<span class="hljs-punctuation">(</span>
-      <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-symbol">ownerId</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$userId</span>
-        <span class="hljs-symbol">activityBonus</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$activityBonus</span>
-        <span class="hljs-symbol">alimony</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$alimony</span>
-        <span class="hljs-symbol">annuities</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$annuities</span>
-        <span class="hljs-symbol">intermittentIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$intermittentIncome</span>
-        <span class="hljs-symbol">licensedProfessionalIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$licensedProfessionalIncome</span>
-        <span class="hljs-symbol">maternityLeaveBenefit</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$maternityLeaveBenefit</span>
-        <span class="hljs-symbol">militaryIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$militaryIncome</span>
-        <span class="hljs-symbol">netMonthlyIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$netMonthlyIncome</span>
-        <span class="hljs-symbol">netSalaryMonthlyIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$netSalaryMonthlyIncome</span>
-        <span class="hljs-symbol">propertyIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$propertyIncome</span>
-        <span class="hljs-symbol">retirementPensionMonthlyIncome</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$retirementPensionMonthlyIncome</span>
-        <span class="hljs-symbol">savings</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$savings</span>
-        <span class="hljs-symbol">socialCareBenefit</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$socialCareBenefit</span>
-        <span class="hljs-symbol">socialFamilyBenefit</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$socialFamilyBenefit</span>
-        <span class="hljs-symbol">unemploymentAllowance</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$unemploymentAllowance</span>
-        <span class="hljs-symbol">scholarship</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$scholarship</span>
-      <span class="hljs-punctuation">}</span>
+                                <h1 id="inviter-un-locataire">Inviter un locataire</h1>
+<p>Cette fonction permet d&apos;envoyer un email au locataire pour l&apos;inviter à faire créer un dossier.</p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> inviteRenter<span class="hljs-punctuation">(</span><span class="hljs-variable">$email</span>: Email, <span class="hljs-variable">$phone</span>: String, <span class="hljs-variable">$name</span>: String<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    inviteUser<span class="hljs-punctuation">(</span>
+      <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$email</span>, <span class="hljs-symbol">phone</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$phone</span>, <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$name</span>, <span class="hljs-symbol">category</span><span class="hljs-punctuation">:</span> RENTER <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
-      financialState <span class="hljs-punctuation">{</span>
-        <span class="hljs-punctuation">...</span>FinancialStateFragment
+      invitation <span class="hljs-punctuation">{</span>
+        id
+        acceptUrl
+        state
       <span class="hljs-punctuation">}</span>
+      errors
     <span class="hljs-punctuation">}</span>
-
-<span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
 </code></pre>
 
                                 
@@ -737,14 +719,10 @@
 
             
                 
-                <a href="creer-un-referent.html" class="navigation navigation-prev " aria-label="Previous page: Créer un référent">
+                <a href="choisir-le-paiement-par-facture.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Choisir le paiement par facture">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="creation-des-informations-de-carte-bancaire.html" class="navigation navigation-next " aria-label="Next page: Création des informations de carte bancaire">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -753,7 +731,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Créer un état financier","level":"2.2.2.9","depth":3,"next":{"title":"Création des informations de carte bancaire","level":"2.2.2.10","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creation-des-informations-de-carte-bancaire.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creation-des-informations-de-carte-bancaire.md","articles":[]},"previous":{"title":"Créer un référent","level":"2.2.2.8","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-referent.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-referent.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-etat-financier.md","mtime":"2023-08-17T14:41:28.763Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-17T14:41:42.919Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Inviter un locataire","level":"2.2.2.18","depth":3,"previous":{"title":"Choisir le paiement par facture","level":"2.2.2.17","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/choisir-le-paiement-par-facture.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/choisir-le-paiement-par-facture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/inviter-un-locataire.md","mtime":"2023-08-17T14:41:28.763Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-17T14:41:42.919Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
