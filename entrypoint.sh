@@ -129,16 +129,16 @@ COPY_OUTPUT() {
 PUSH_REPO() {
     echo '[INFO] Add new commit for branch...'
 
-    git config --global user.name "$USER_NAME"
-    git config --global user.email "$USER_EMAIL"
-    git status
+    git config user.name "$USER_NAME"
+    git config user.email "$USER_EMAIL"
+    echo "$USER_NAME"
+    # git status
     git add --all
     git commit -m "Deploy to Github Pages (from $GITHUB_SHA)"
 
-    git log
     echo '[INFO] Push to result...'
-    git status
-    git branch -a
+    # git status
+    # git branch -a
     git push origin $DEFAULT_BRANCH
     echo '[INFO] Deploy completed...!'
 }
