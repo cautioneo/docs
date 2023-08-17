@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and deploy
-        run: entrypoint.sh
+        run: ./entrypoint.sh
