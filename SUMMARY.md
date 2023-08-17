@@ -39,4 +39,4 @@
     * [Renouveler un certificat utilisateur](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/renouveler-un-certificat-utilisateur.md)
     * [Mettre à jour le SIREN d'un agent immobilier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-le-siren-dun-agent-immobilier.md)
     * [Créer un compte bancaire STRIPE](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md)
-    * [Créer une facture](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-une-facture.md)
+    * [Choisir le paiement par facture](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/choisir-le-paiement-par-facture.md)

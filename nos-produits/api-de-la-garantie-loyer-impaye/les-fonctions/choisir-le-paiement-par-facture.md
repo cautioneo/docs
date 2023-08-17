@@ -1,6 +1,6 @@
-# Créer une facture
+# Choisir le paiement par facture
 
-Cette fonction permet de générer une facture&#x20;
+### Cette fonction permet d'envoyer un mail à l'utilisateur pour lui donner le choix de paiement soit par carte bancaire soit par virement ou prélèvement.
 
 ```graphql
 mutation createInvoiceBilling(
