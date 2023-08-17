@@ -4,17 +4,16 @@ on:
   push:
     branches:
         - master
-env:
-  USER_EMAIL: ${{secrets.USER_EMAIL}}
-  USER_NAME: ${{secrets.USER_NAME}}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   Build-Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Build and deploy
+        env:
+          USER_EMAIL: ${{secrets.USER_EMAIL}}
+          USER_NAME: ${{secrets.USER_NAME}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
           chmod +x ./entrypoint.sh
