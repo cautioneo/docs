@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Page · HonKit</title>
+        <title>Créer une facture · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -112,7 +112,7 @@
                 <a href="../../../debuter-avec-les-api-cautioneo.html">
             
                     
-                    🧑🎓 🧑🎓 Débuter avec Les Api Cautioneo
+                    🧑‍🎓 Débuter avec Les Api Cautioneo
             
                 </a>
             
@@ -583,12 +583,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.2.16" data-path="page.html">
+        <li class="chapter active" data-level="2.2.2.16" data-path="creer-une-facture.html">
             
-                <a href="page.html">
+                <a href="creer-une-facture.html">
             
                     
-                    Page
+                    Créer une facture
             
                 </a>
             
@@ -636,7 +636,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Page</a>
+        <a href="../../.." >Créer une facture</a>
     </h1>
 </div>
 
@@ -651,7 +651,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="page">Page</h1>
+                                <h1 id="créer-une-facture">Créer une facture</h1>
+<p>Cette fonction permet de générer une facture </p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> createInvoiceBilling<span class="hljs-punctuation">(</span>
+    <span class="hljs-variable">$userId</span>: ID<span class="hljs-punctuation">!</span>
+    <span class="hljs-variable">$landlordId</span>: ID
+    <span class="hljs-variable">$subscriptionId</span>: ID
+  <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    createInvoiceBilling<span class="hljs-punctuation">(</span>
+      <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">landlordId</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$landlordId</span>, <span class="hljs-symbol">subscriptionId</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$subscriptionId</span> <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+      errors
+      paymentMethod <span class="hljs-punctuation">{</span>
+        id
+        active
+        category
+      <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+    acceptTerm<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$userId</span>, <span class="hljs-symbol">name</span><span class="hljs-punctuation">:</span> STRIPE <span class="hljs-punctuation">}</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+      user <span class="hljs-punctuation">{</span>
+        id
+      <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
+</code></pre>
 
                                 
                                 </section>
@@ -691,7 +714,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Page","level":"2.2.2.16","depth":3,"previous":{"title":"Créer un compte bancaire STRIPE","level":"2.2.2.15","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/page.md","mtime":"2023-08-17T10:13:33.729Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-17T10:13:43.440Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Créer une facture","level":"2.2.2.16","depth":3,"previous":{"title":"Créer un compte bancaire STRIPE","level":"2.2.2.15","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-stripe.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-une-facture.md","mtime":"2023-08-17T10:34:56.472Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-17T10:35:09.374Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
