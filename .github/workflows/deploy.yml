@@ -14,5 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and deploy
-        uses: docker
-        image: Dockerfile
+        run: entrypoint.sh
