@@ -40,7 +40,7 @@ BUILD() {
             ls -la
         }
     fi
-    git clone "https://:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" $DIR
+    git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" $DIR
 
     if [ -f "$FILE" ];
     then
@@ -95,7 +95,7 @@ COPY_OUTPUT() {
 
     cd $GITHUB_WORKSPACE
     mkdir $FOLDER_CODE
-    git clone "https://:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" $FOLDER_CODE
+    git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" $FOLDER_CODE
     cd $FOLDER_CODE
 
     existed_in_remote=$(git ls-remote --heads origin $DEFAULT_BRANCH)
