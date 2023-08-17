@@ -129,9 +129,10 @@ COPY_OUTPUT() {
 PUSH_REPO() {
     echo '[INFO] Add new commit for branch...'
 
+    env
+
     git config user.name "$USER_NAME"
     git config user.email "$USER_EMAIL"
-    echo $USER_NAME
     # git status
     git add --all
     git commit -m "Deploy to Github Pages (from $GITHUB_SHA)"
