@@ -11,8 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and deploy
         env:
-          USER_EMAIL: ${{secrets.USER_EMAIL}}
-          USER_NAME: ${{secrets.USER_NAME}}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
