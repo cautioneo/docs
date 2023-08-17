@@ -131,7 +131,7 @@ PUSH_REPO() {
 
     git config user.name "$USER_NAME"
     git config user.email "$USER_EMAIL"
-    echo "$USER_NAME"
+    echo $USER_NAME
     # git status
     git add --all
     git commit -m "Deploy to Github Pages (from $GITHUB_SHA)"
