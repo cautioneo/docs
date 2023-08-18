@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Mettre à jour un bien immobilier · HonKit</title>
+        <title>Abandonner la souscription · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -64,10 +64,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="liste-de-documents.html" />
+    <link rel="next" href="lister-les-documents-des-ou-du-locataires.html" />
     
     
-    <link rel="prev" href="creer-un-bien-immobilier.html" />
+    <link rel="prev" href="valider-lenvoi-du-formulaire-de-souscription.html" />
     
 
     </head>
@@ -442,7 +442,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.2.5" data-path="mettre-a-jour-un-bien-immobilier.html">
+        <li class="chapter " data-level="2.2.2.5" data-path="mettre-a-jour-un-bien-immobilier.html">
             
                 <a href="mettre-a-jour-un-bien-immobilier.html">
             
@@ -650,7 +650,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.2.21" data-path="abandonner-la-souscription.html">
+        <li class="chapter active" data-level="2.2.2.21" data-path="abandonner-la-souscription.html">
             
                 <a href="abandonner-la-souscription.html">
             
@@ -742,7 +742,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Mettre à jour un bien immobilier</a>
+        <a href="../../.." >Abandonner la souscription</a>
     </h1>
 </div>
 
@@ -757,31 +757,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mettre-à-jour-un-bien-immobilier">Mettre à jour un bien immobilier</h1>
-<p>Cette fonction permet la mise à jour des données du bien immobilier</p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
-    updateProperty<span class="hljs-punctuation">(</span>
-    <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-symbol">clientMutationId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;YOUR_CHOICE_NOT_MANDATORY&quot;</span>
-      <span class="hljs-symbol">landlordId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ID&quot;</span>
-      <span class="hljs-symbol">realtorId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ID&quot;</span>
-      <span class="hljs-symbol">furnished</span><span class="hljs-punctuation">:</span> <span class="hljs-literal">false</span>
-      <span class="hljs-symbol">address</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;33 rue de l&apos;api&quot;</span>
-      <span class="hljs-symbol">rentAmount</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1000</span>
-      <span class="hljs-symbol">rentWithoutCharges</span><span class="hljs-punctuation">:</span> <span class="hljs-number">900</span>
-      <span class="hljs-symbol">rentalCharges</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span>
-      <span class="hljs-symbol">deposit</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1000</span>
-      <span class="hljs-symbol">surface</span><span class="hljs-punctuation">:</span> <span class="hljs-number">35.5</span>
-      <span class="hljs-symbol">description</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Magnifique triplex les pieds dans l&apos;eau&quot;</span>
-       <span class="hljs-punctuation">}</span>
- <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
-     property <span class="hljs-punctuation">{</span>
-       id
-     <span class="hljs-punctuation">}</span>
-     errors
-     clientMutationId
-   <span class="hljs-punctuation">}</span>
- <span class="hljs-punctuation">}</span>
+                                <h1 id="abandonner-la-souscription">Abandonner la souscription</h1>
+<p>Cette fonction sert à abandonner une souscription en cours</p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> pbiSubscriptionAbandon<span class="hljs-punctuation">(</span><span class="hljs-variable">$id</span>: ID<span class="hljs-punctuation">!</span>, <span class="hljs-variable">$reason</span>: String<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    pbiSubscriptionAbandon<span class="hljs-punctuation">(</span><span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$id</span>, <span class="hljs-symbol">reason</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$reason</span> <span class="hljs-punctuation">}</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+      errors
+      <span class="hljs-keyword">subscription</span> <span class="hljs-punctuation">{</span>
+        <span class="hljs-punctuation">...</span>PbiSubscriptionFragment
+      <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">}</span>
 </code></pre>
 
                                 
@@ -810,12 +795,12 @@
 
             
                 
-                <a href="creer-un-bien-immobilier.html" class="navigation navigation-prev " aria-label="Previous page: Créer un bien immobilier">
+                <a href="valider-lenvoi-du-formulaire-de-souscription.html" class="navigation navigation-prev " aria-label="Previous page: Valider l'envoi du formulaire de souscription">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="liste-de-documents.html" class="navigation navigation-next " aria-label="Next page: Liste de documents">
+                <a href="lister-les-documents-des-ou-du-locataires.html" class="navigation navigation-next " aria-label="Next page: Lister les documents des ou du  locataires">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -826,7 +811,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mettre à jour un bien immobilier","level":"2.2.2.5","depth":3,"next":{"title":"Liste de documents","level":"2.2.2.6","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md","articles":[]},"previous":{"title":"Créer un bien immobilier","level":"2.2.2.4","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-bien-immobilier.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-bien-immobilier.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/mettre-a-jour-un-bien-immobilier.md","mtime":"2023-08-18T13:20:20.782Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-18T13:20:35.334Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Abandonner la souscription","level":"2.2.2.21","depth":3,"next":{"title":"Lister les documents des ou du  locataires","level":"2.2.2.22","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/lister-les-documents-des-ou-du-locataires.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/lister-les-documents-des-ou-du-locataires.md","articles":[]},"previous":{"title":"Valider l'envoi du formulaire de souscription","level":"2.2.2.20","depth":3,"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-lenvoi-du-formulaire-de-souscription.md","ref":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-lenvoi-du-formulaire-de-souscription.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/abandonner-la-souscription.md","mtime":"2023-08-18T13:20:20.782Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-18T13:20:35.334Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
