@@ -29,7 +29,6 @@ mutation createUser(
         email
       }
     }
-  }
 ```
 {% endcode %}
 
