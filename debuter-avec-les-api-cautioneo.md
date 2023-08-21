@@ -55,3 +55,7 @@ _Dans le header de la requête HTTP_
 ## Envie d'en savoir plus ?&#x20;
 
 Trouvez l'ensemble de la documentions relative à nos Divers Api dans les rubriques ci-dessous.
+
+Notre Garantie Locataire&#x20;
+
+Notre Garantie Loyer Impayé
