@@ -6,7 +6,6 @@ Nous allons dans un premier temps vous donner un exemple de requête attendue pa
 
 Ci-dessous un exemple de requête (appelée "Query" en GraphQL ) nous permettant de créer un utilisateur.
 
-{% code fullWidth="false" %}
 ```graphql
 mutation createUser(
     $email: Email!
@@ -31,7 +30,6 @@ mutation createUser(
     }
   }
 ```
-{% endcode %}
 
 Nous transmettons ici à l'api par la fonction createUser() divers paramètres tel que :&#x20;
 
