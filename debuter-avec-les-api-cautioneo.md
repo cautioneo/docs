@@ -22,7 +22,7 @@ Staging: [ https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-s
 
 Cautioneo vous a transmit un `CLIENT_ID` et un `CLIENT_SECRET`
 
-```markup
+```sh
 curl -F grant_type=client_credentials \
      -F client_id=YOUR_CLIENT_ID \
      -F client_secret=YOUR_CLIENT_SECRET \
