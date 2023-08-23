@@ -1,8 +1,3 @@
----
-description: >-
-  Retrouvez dans cette rubrique tous les informations relatives à l'api des
-  Garantie Loyer Impayé Cautionéo.
----
+# 🔐 Notre Garantie Loyer Impayé
 
-# 🔐 API de la Garantie Loyer Impayé
-
+L’Assurance Loyers Impayés Cautioneo a été conçue avec l’aide d’une centaine de propriétaires afin de répondre aux peurs auxquelles ils font face : peur des impayés, des dégradations, du choix de locataire, de l’assurance qui n’indemnise pas car le dossier du locataire n’a pas été certifié...
