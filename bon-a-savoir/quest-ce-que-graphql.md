@@ -17,11 +17,90 @@ C'est pourquoi on peut y retrouver des fonctionnalités de base que l'ont ne ret
 
 #### Query
 
+C'est le mot clé pour définir une requête de lecture des données de l'API (équivalent en `REST`: `GET`).
+
+Elles permettent donc de récupérer les informations d'un objet ou d'une fonction, mais pas d'en modifier la valeur.
+
+{% hint style="warning" %}
+**Spécificité de l'API Cautioneo**
+
+Les `ID` des objets sont uniques et sont encapsulés dans une chaîne de caractère base64 contenant l'ID interne (uuid) de l'objet et comportant une date d'expiration et une signature.
+
+Ainsi les`ID` obtenus depuis l'API ne peuvent être utilisés que dans cette API et ne peuvent provenir que de cette API, ils ne peuvent donc être générés / devinés par un acteur extérieur.
+
+Certains objets comme `User` ont une date d'expiration dans leur `ID` ce qui les protège d'une fuite de donnée ou d'une interception par un acteur extérieur.
+{% endhint %}
+
 #### Mutation
+
+C'est le mot clé pour définir une requête d'écriture des données de l'API (équivalent en `REST` : `PUT` / `PATCH` / `DELETE`).
+
+Elles permettent donc de récupérer les informations d'un objet ou d'une fonction, mais pas d'en modifier la valeur.
+
+Chez Cautioneo nous utilisons la syntaxe [Relay](quest-ce-que-graphql.md#graphql-relay) pour matérialiser les attributs à enregistrer / modifier via l'argument `input` de la fonction de mutation.
 
 #### Subscription
 
+#### Fragments
 
+### [GraphQL Relay](https://relay.dev/docs/)
+
+C'est une extension du protocole GraphQL qui a pour but de définir certains principes qui restent libres dans l'utilisation du protocole. En voici une liste non exhaustive, mais qui est utilisée dans l'API Cautioneo
+
+#### Node
+
+Chaque objet de l'API Cautioneo dérive de l'interface Node et peut donc être obtenu via son ID par une seule et même query : `node`
+
+Ainsi pour obtenir un `User` on peut s'addresser à l'API comme ceci :&#x20;
+
+```graphql
+query getUser($id: ID!) {
+  node(id: $id) {
+    ... on User {
+      email
+    }
+  }
+}
+```
+
+#### Pagination
+
+La pagination se fait par curseur et non pas numéro de page.
+
+Cela permet de garder une cohérence lors du parcours d'une collection si celle-ci est amenée à changer.
+
+Cette technique est souvent appliquée lors de l'implémentation de fil d'actualité (Twitter, Facebook, Instagram, etc...)
+
+Une explication très complète est disponible [ici](https://relay.dev/graphql/connections.htm), mais en voici un résumé :&#x20;
+
+```graphql
+# Nous souhaitons obtenir la liste des documents d'un dossier :
+query {
+  node(id: "ID") {
+    ... on CautioneoSubscription {
+      documents(
+        first: 10 # Obtenir les 10 premiers enregistrements
+        last: 10 # Obtenir les 10 derniers enregistrements
+        after: "CURSOR" # Marqueur de début de liste (pour obtenir les enregistrements après ce marqueur)
+        before: "CURSOR" # Marqueur de fin de liste (pour obtenir les enregistrements avant ce marqueur)
+      ) {
+        edges { # collection des enregistrements
+          cursor # identifiant de l'enregistrement dans la liste afin de pouvoir la parcourir à partir de cet enregistrement
+          node { # un enregistrement auquel il faut demander les attributs souhaités
+            id
+          }
+        }
+        totalCount # Nombre total d'enregistrements
+        pageInfo {
+          hasNextPage # Y-a-t-il d'autres enregistrement après ?
+          hasPreviousPage # Y-a-t-il d'autres enregistrement avant ?
+          startCursor # Premier curseur de la liste
+          endCursor # Dernier curseur de la liste
+        }
+      }
+    }
+}
+```
 
 ### Implémentations
 
