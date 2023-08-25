@@ -1,27 +1,13 @@
 # Liste de documents
 
-Cette fonction permet de récupérer la liste des documents transmis du ou des locataires.
+Liste des documents à fournir
 
 ```graphql
 query getPbiSubscriptionDocuments($id: ID!) {
     node(id: $id) {
       ... on PbiSubscription {
-        property {
-          landlord {
-            user {
-              firstName
-              lastName
-            }
-          }
-        }
+        id
         state
-        comment
-        situation
-        renters {
-          nodes {
-            id
-          }
-        }
         neededDocumentsLabelsByOwner {
           labels {
             category
@@ -46,6 +32,19 @@ query getPbiSubscriptionDocuments($id: ID!) {
             }
           }
         }
+      }
+    }
+  }
+```
+
+Cette fonction permet de récupérer la liste des documents transmis du ou des locataires.
+
+```graphql
+query getPbiSubscriptionDocuments($id: ID!) {
+    node(id: $id) {
+      ... on PbiSubscription {
+        id
+        state
         documents {
           nodes {
             id

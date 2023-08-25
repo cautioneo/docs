@@ -1,6 +1,6 @@
-# Créer un abonnement
+# Créer un dossier
 
-Cette fonction permet de créer un abonnement à la Garantie loyers impayés
+Cette fonction permet de créer un dossier à la Garantie loyers impayés
 
 ```graphql
 mutation {
