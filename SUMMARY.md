@@ -3,6 +3,11 @@
 * [🏢 Api Cautioneo !](README.md)
 * [🧑‍🎓 Débuter avec Les Api Cautioneo](debuter-avec-les-api-cautioneo.md)
 
+## Bon à savoir
+
+* [Glossaire](bon-a-savoir/glossaire.md)
+* [Qu'est ce que GraphQL ?](bon-a-savoir/quest-ce-que-graphql.md)
+
 ## Nos produits
 
 * [🤝 Notre Garantie Locataire](nos-produits/notre-garantie-locataire/README.md)
