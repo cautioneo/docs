@@ -1,10 +1,6 @@
----
-description: >-
-  Cette fonction permet de renseigner les informations financières, de revenus
-  et de capital d'un utilisateur.
----
-
 # Création des données financières
+
+Cette fonction permet de renseigner les informations financières, de revenus et de capital d'un utilisateur.
 
 Ces informations sont catégorisées selon la situation professionnelle de l'utilisateur, la liste est disponible [ici](https://cautioneo.github.io/cautioneo-design/csp.html).
 
@@ -12,7 +8,6 @@ Ces informations sont catégorisées selon la situation professionnelle de l'uti
 mutation {
   createFinancialState(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       userId: "ID"
       activityBonus: 0
       alimony: 0
@@ -38,7 +33,6 @@ mutation {
       }
     }
     errors
-    clientMutationId
   }
 }
 ```

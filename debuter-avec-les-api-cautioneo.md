@@ -1,8 +1,6 @@
----
-description: Vous trouverez ici toutes les informations relatives à notre api !
----
-
 # 🧑‍🎓 Débuter avec Les Api Cautioneo
+
+Vous trouverez ici toutes les informations relatives à notre api !
 
 ## GraphQL Docs
 
@@ -14,9 +12,10 @@ Cette API suit les conventions de schema [GraphQL Relay](https://relay.dev/)
 
 ## Environnement URL
 
-Production: [https://api.cautioneo.com/graphql](https://api.cautioneo.com/graphql)
-
-Staging: [ https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-staging.caut.io/graphq)l
+| Environnement | URL                                                                                           |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| Production    | [https://api.cautioneo.com/graphql](https://api.cautioneo.com/graphql)                        |
+| Staging       | [https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-staging.caut.io/graphq)l |
 
 ## Authorization <a href="#authorization" id="authorization"></a>
 
@@ -56,6 +55,6 @@ _Dans le header de la requête HTTP_
 
 Trouvez l'ensemble de la documentions relative à nos Divers Api dans les rubriques ci-dessous.
 
-Notre Garantie Locataire&#x20;
+[Notre Garantie Locataire](nos-produits/notre-garantie-locataire/)
 
-Notre Garantie Loyer Impayé
+[Notre Garantie Loyer Impayé](nos-produits/notre-garantie-loyer-impaye/)

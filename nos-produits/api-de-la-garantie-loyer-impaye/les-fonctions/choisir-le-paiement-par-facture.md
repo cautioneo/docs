@@ -8,20 +8,20 @@ mutation createInvoiceBilling(
     $landlordId: ID
     $subscriptionId: ID
   ) {
-    createInvoiceBilling(
-      input: { landlordId: $landlordId, subscriptionId: $subscriptionId }
-    ) {
-      errors
-      paymentMethod {
-        id
-        active
-        category
-      }
-    }
-    acceptTerm(input: { id: $userId, name: STRIPE }) {
-      user {
-        id
-      }
+  createInvoiceBilling(
+    input: { landlordId: $landlordId, subscriptionId: $subscriptionId }
+  ) {
+    errors
+    paymentMethod {
+      id
+      active
+      category
     }
   }
+  acceptTerm(input: { id: $userId, name: STRIPE }) {
+    user {
+      id
+    }
+  }
+}
 ```

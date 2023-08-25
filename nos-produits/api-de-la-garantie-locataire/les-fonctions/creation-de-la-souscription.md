@@ -1,12 +1,11 @@
-# Création de la souscription
+# Création d'un dossier
 
-### Cette fonction permet de créer une souscription / un dossier.
+Cette fonction permet de créer une souscription / un dossier.
 
 ```graphql
 mutation {
   createSubscription(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       renterId: "ID"
       rentAmount: 250
       homeFound: false
@@ -24,7 +23,6 @@ mutation {
       }
     }
     errors
-    clientMutationId
   }
 }
 ```

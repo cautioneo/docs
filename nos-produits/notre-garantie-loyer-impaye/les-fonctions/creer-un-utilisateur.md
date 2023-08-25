@@ -1,16 +1,11 @@
----
-description: >-
-  Cette fonction permet de créer un compte utilisateur. Elle prend en paramètre
-  un objet input contenant les informations nécessaires au compte.
----
-
 # Créer un utilisateur
+
+Cette fonction permet de créer un compte utilisateur. Elle prend en paramètre un objet input contenant les informations nécessaires au compte.
 
 ```graphql
 mutation {
   createUser(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       email: "test@test.org"
       firstName: "John"
       lastName: "Doe"
@@ -41,7 +36,6 @@ mutation {
       email
     }
     errors
-    clientMutationId
   }
 }
 ```
@@ -85,7 +79,6 @@ mutation {
       email
     }
     errors
-    clientMutationId
   }
 }
 ```

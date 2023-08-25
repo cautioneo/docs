@@ -2,22 +2,21 @@
 
 Cette fonction permet de créer un dossier à la Garantie loyers impayés
 
-```graphql
-mutation {
+<pre class="language-graphql"><code class="lang-graphql">mutation {
     createPbiSubscription(
-    input: {
-        clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
-        propertyId: "ID"
-        situation: ALONE
-        comment: "Je suis très content des services de Cautioneo"
-        ownerSendDocuments: true
+        input: {
+            clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
+            propertyId: "ID"
+            situation: ALONE
+            comment: "Je suis très content des services de Cautioneo"
+            ownerSendDocuments: true
         }
- ) { 
-     pbiSubscription {
+<strong>    ) { 
+</strong>    pbiSubscription {
         id 
-        }
-        errors
-        clientMutationId
     }
- }
-```
+    errors
+    clientMutationId
+  }
+}
+</code></pre>

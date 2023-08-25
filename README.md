@@ -1,8 +1,25 @@
 ---
-description: Cette page décrit les fonctions utilisables dans l'API GraphQL Cautioneo.
+cover: .gitbook/assets/cautioneo-logo-color (1).png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # 🏢 Api Cautioneo !
+
+Cette page décrit les fonctions utilisables dans l'API GraphQL Cautioneo.
 
 ## Bienvenue dans l'API Cautioneo
 

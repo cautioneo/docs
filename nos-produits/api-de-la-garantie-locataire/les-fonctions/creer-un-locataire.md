@@ -1,8 +1,6 @@
----
-description: Cette fonction permet de créer un locataire pour un compte utilisateur.
----
-
 # Créer un locataire
+
+Cette fonction permet de créer un locataire pour un compte utilisateur.
 
 ```graphql
 mutation {

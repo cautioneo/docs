@@ -1,8 +1,6 @@
----
-description: Cette fonction permet de créer un bien locatif rattaché à une souscription.
----
-
 # Création du bien à louer
+
+Cette fonction permet de créer un bien locatif rattaché à une souscription.
 
 ```graphql
 mutation {

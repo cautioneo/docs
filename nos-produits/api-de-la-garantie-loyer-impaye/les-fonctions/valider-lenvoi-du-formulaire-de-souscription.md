@@ -4,14 +4,13 @@ Cette fonction permet une fois les différents champs et documents remplis et tr
 
 ```graphql
 mutation pbiSubscriptionSubmit($id: ID!, $ownerSendDocuments: Boolean) {
-    pbiSubscriptionSubmit(
-      input: { id: $id, ownerSendDocuments: $ownerSendDocuments }
-    ) {
-      errors
-      subscription {
-        ...PbiSubscriptionFragment
-      }
+  pbiSubscriptionSubmit(
+    input: { id: $id, ownerSendDocuments: $ownerSendDocuments }
+  ) {
+    errors
+    subscription {
+      ...PbiSubscriptionFragment
     }
   }
-
+}
 ```
