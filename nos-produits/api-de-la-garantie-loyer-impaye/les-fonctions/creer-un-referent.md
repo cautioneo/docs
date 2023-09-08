@@ -1,6 +1,8 @@
 # Créer un référent
 
-Cette fonction sert à créer un référent Garantie loyer impayé&#x20;
+Cette fonction sert à créer un référent (pour les étudiants sans revenus).
+
+Un locataire peut avoir jusqu'à 2 référents pour un même dossier.
 
 ```graphql
 mutation {

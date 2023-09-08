@@ -6,9 +6,10 @@ Cette fonction permet de créer un compte utilisateur. Elle prend en paramètre 
 mutation {
   createUser(
     input: {
-      email: "test@test.org"
-      firstName: "John"
-      lastName: "Doe"
+      email: "test@test.org" # Required
+      password: "********" # Required
+      firstName: "John" # Required
+      lastName: "Doe" # Required
       acceptTerms: true
       acceptProspecting: true
       birthplace: "Lille"
@@ -35,3 +36,9 @@ mutation {
   }
 }
 ```
+
+Retrouver la listes des :&#x20;
+
+* [`civilStatus`](https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/enums/UserCivilStatus)
+* [`category`](https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/enums/UserCategory)
+* [`gender`](https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/enums/UserGender)

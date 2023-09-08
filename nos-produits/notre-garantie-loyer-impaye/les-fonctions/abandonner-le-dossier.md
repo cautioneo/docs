@@ -1,6 +1,6 @@
-# Abandonner la souscription
+# Abandonner le dossier
 
-Cette fonction sert à abandonner une souscription en cours
+Afin d'abandonner une souscription en cours, vous pouvez utiliser cette fonction :&#x20;
 
 ```graphql
 mutation pbiSubscriptionAbandon($id: ID!, $reason: String) {

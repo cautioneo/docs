@@ -1,6 +1,12 @@
-# Créer un locataire
+# Créer un Locataire
 
-Cette fonction permet de créer un ou plusieurs locataires.
+Cette fonction permet de créer un locataire.
+
+Plusieurs locataires peuvent constituer le dossier :&#x20;
+
+* 1 pour une personne seule
+* 2 pour un couple (concubinnage, marié ou pacsé)
+* jusqu'à 4 dans le cadre d'une collocation
 
 Lesquels seront couvert par la garantie.
 
@@ -27,3 +33,11 @@ mutation {
     }
 }
 ```
+
+
+
+{% hint style="info" %}
+Un locataire étudiant sans revenu peut présenter jusqu'à deux référents de confiance.
+
+Voir [Créer un référent](../../notre-garantie-locataire/les-fonctions/creer-un-referent.md).
+{% endhint %}

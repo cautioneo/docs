@@ -2,8 +2,6 @@
 
 ### Création du propriétaire personne physique
 
-Cette fonction permet de créer un propriétaire en personne physique afin de le rattacher à un bien à louer.
-
 ```graphql
 mutation {
   createLandlord(
@@ -29,17 +27,14 @@ mutation {
 }
 ```
 
-### Création du propriétaire personne morale
-
-Cette fonction permet de créer un propriétaire en personne morale afin de le rattacher à un bien à louer.
+### Création du propriétaire personne morale (ex:  SCI)
 
 ```graphql
 mutation {
   createProprietor(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       company: {
-        siren: "XXXXXXXX"
+        siren: "XXXXXXXX" # Required
         email: "proprietor@test.org"
         legalName: "Proprietor"
         creationDate: "2020-01-01"

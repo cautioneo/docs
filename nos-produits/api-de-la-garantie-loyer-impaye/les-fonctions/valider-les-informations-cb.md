@@ -1,6 +1,6 @@
 # Valider les informations CB
 
-Cette fonction permet de valider les informations d'une CB rattaché à une souscription.
+Cette fonction permet de valider les informations d'une CB rattaché à un propriétaire.
 
 ```graphql
  mutation pbiSubscriptionValidateCb($id: ID!) {

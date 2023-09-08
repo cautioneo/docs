@@ -1,6 +1,6 @@
-# Créer un bien immobilier
+# Créer un Bien immobilier
 
-Cette fonction permet de créer un bien immobilier en location
+Cette fonction permet de transmettre les informations du bien immobilier en location à assurer.
 
 ```graphql
 mutation {

@@ -1,4 +1,4 @@
-# Création d'un dossier
+# Créer un dossier Locataire
 
 Cette fonction permet de créer une souscription / un dossier.
 
@@ -6,7 +6,7 @@ Cette fonction permet de créer une souscription / un dossier.
 mutation {
   createSubscription(
     input: {
-      renterId: "ID"
+      renterId: "ID" # Required
       rentAmount: 250
       homeFound: false
       situation: ALONE

@@ -1,4 +1,16 @@
-# Créer un référent
+# Créer un Référent
 
-Crée un référent pour les dossiers étudiants. Il ne peut y avoir qu'un seul référent par dossier même dans le cadre d'un couple.&#x20;
+Crée un conjoint rattaché a un locataire. Définir le statut du couple est obligatoire dans le dossier (champ: `situation`).
 
+```graphql
+mutation {
+ createReferent(
+      input: {
+        subscriptionId: $subscriptionId
+        userId: $userId
+      }
+    ) {
+      referent {
+        id
+  }
+```

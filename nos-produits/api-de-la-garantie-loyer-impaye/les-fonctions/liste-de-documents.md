@@ -1,6 +1,6 @@
-# Liste de documents
+# Liste des pièces justificatives
 
-Liste des documents à fournir
+Voici comment obtenir la liste des documents justificatifs à fournir pour l'évaluation du dossier par Cautioneo.
 
 ```graphql
 query getPbiSubscriptionDocuments($id: ID!) {
@@ -37,7 +37,7 @@ query getPbiSubscriptionDocuments($id: ID!) {
   }
 ```
 
-Cette fonction permet de récupérer la liste des documents transmis du ou des locataires.
+Cette fonction permet de récupérer la liste des documents justificatifs transmis par le bailleur du ou des locataires.
 
 ```graphql
 query getPbiSubscriptionDocuments($id: ID!) {

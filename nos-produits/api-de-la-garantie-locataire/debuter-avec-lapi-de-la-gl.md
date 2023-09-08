@@ -8,11 +8,11 @@ Ci-dessous un exemple de requête (appelée "Query" en GraphQL ) nous permettant
 
 ```graphql
 mutation createUser(
-    $email: Email!
-    $password: String!
-    $accept_terms: Boolean!
-    $accept_prospecting: Boolean!
-    $category: UserCategory
+    $email: Email # Required
+    $password: String # Required
+    $accept_terms: Boolean # Required
+    $accept_prospecting: Boolean # Required
+    $category: UserCategory # Required
   ) {
     createUser(
       input: {

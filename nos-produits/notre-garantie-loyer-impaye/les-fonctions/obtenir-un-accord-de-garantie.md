@@ -1,14 +1,18 @@
-# Obtenir un accord de garantie
+# Obtenir un Accord de Garantie
 
-Cette fonction permet la récupération d'un accord de garantie lorsqu'il a été octroyé à ce dernier.
+Cette fonction permet d'obtenir les informations d'un accord de garantie une fois le dossier validé par Cautioneo.
 
 ```graphql
 query getCertificate($id: ID!) {
   node(id: $id) {
-    ... on Certificate {
+    ... on PbiSubscription {
       id
-      fileName
-      expired
+      certificate {
+        id
+        fileName
+        expired
+        url
+      }
     }
   }
 }

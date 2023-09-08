@@ -17,18 +17,19 @@ layout:
     visible: true
 ---
 
-# 🏢 Api Cautioneo !
+# 🏢 API Cautioneo
 
-Cette page décrit les fonctions utilisables dans l'API GraphQL Cautioneo.
+Bienvenue dans la documentation de l'API Cautioneo !
 
-## Bienvenue dans l'API Cautioneo
+Vous trouverez ici toutes les informations relative à notre API GraphQL.
 
-Bienvenu dans la documentation de l'api Cautioneo ! Vous trouverez ici toutes les informations relative à notre Api GraphQL. Bonne visite !&#x20;
+Bonne visite !&#x20;
 
 ## Envie de tester ?
 
-Vous êtes prêt à faire vos premières requêtes ? Essayez Quick start immédiatement !
+Vous êtes prêt à faire vos premières requêtes ? [Débuter](debuter-avec-les-api-cautioneo.md)[ immédiatement !](debuter-avec-les-api-cautioneo.md)
 
-## Envie d'approfondir ?&#x20;
+## Envie d'approfondir ?
 
-Vous trouverez ci dessous le lien vers les différentes Api misent à votre disposition&#x20;
+* [Qu'est ce que GraphQL ?](bon-a-savoir/quest-ce-que-graphql.md)
+* [Glossaire](bon-a-savoir/glossaire.md)

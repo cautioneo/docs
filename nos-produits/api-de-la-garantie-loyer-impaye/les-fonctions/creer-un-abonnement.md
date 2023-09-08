@@ -1,6 +1,6 @@
-# Créer un dossier
+# Créer un Dossier
 
-Cette fonction permet de créer un dossier à la Garantie loyers impayés
+Cette fonction permet de créer un dossier de Garantie Loyers Impayés
 
 <pre class="language-graphql"><code class="lang-graphql">mutation {
     createPbiSubscription(

@@ -1,6 +1,6 @@
 # Créer un compte bancaire SEPA
 
-Cette fonction permet de créer un compte en banque à partir d'un IBAN
+Cette fonction permet de transmettre les informations de compte bancaire de prélèvement, seul un IBAN est nécessaire.
 
 ```graphql
 mutation createStripeBankAccount(
