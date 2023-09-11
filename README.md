@@ -1,10 +1,10 @@
 ---
-cover: .gitbook/assets/cautioneo-logo-color (1).png
-coverY: 0
+cover: .gitbook/assets/RenduMaisonCautionéoMaison.png
+coverY: 13.514666666666665
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:

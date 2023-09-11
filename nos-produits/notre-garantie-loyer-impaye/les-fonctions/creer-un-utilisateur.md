@@ -2,6 +2,8 @@
 
 Cette fonction permet de créer un compte utilisateur. Elle prend en paramètre un objet input contenant les informations nécessaires au compte.
 
+Les informations obligatoires à transmettre sont marquées ci-dessous par l'annotation **Required.**
+
 ```graphql
 mutation {
   createUser(
