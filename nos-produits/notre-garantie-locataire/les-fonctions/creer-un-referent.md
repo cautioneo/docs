@@ -1,6 +1,6 @@
 # Créer un Référent
 
-Crée un conjoint rattaché a un locataire. Définir le statut du couple est obligatoire dans le dossier (champ: `situation`).
+Crée un référent rattaché à un locataire et à un dossier. Ici nous pouvons transmettre les informations de ce dernier et renseigner l'id du locataire auquel il doit être rattacher ainsi qu'a quel dossier. Le référent devra lui aussi transmettre des justificatifs.
 
 ```graphql
 mutation {
@@ -10,7 +10,10 @@ mutation {
         userId: $userId
       }
     ) {
-      referent {
-        id
+       referent {
+            id
+            email
+            firstName
+            lastName
   }
 ```

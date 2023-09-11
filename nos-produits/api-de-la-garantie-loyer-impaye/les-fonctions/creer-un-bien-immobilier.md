@@ -2,6 +2,8 @@
 
 Cette fonction permet de transmettre les informations du bien immobilier en location à assurer.
 
+Nous transmettrons donc le montant avec et hors charge, ainsi que des informations complémentaires telles que le type de bien (meublé ou non),  la superficie ou une description plus détaillée de ce dernier.
+
 ```graphql
 mutation {
   createProperty(

@@ -1,6 +1,6 @@
 # Obtenir les informations de l'accord de garantie
 
-Cette fonction permet la récupération d'un accord de garantie lorsqu'il a été octroyé à ce dernier.
+Cette fonction de connaitre le statut de l'accord ( expiré ou non ) ainsi que de récupérer l'url grâce à laquelle le visionnage de ce dernier est possible.
 
 ```graphql
 query {
@@ -8,8 +8,8 @@ query {
     ... on CautioneoSubscription {
       certificate {
         id
-        state
-        url
+        expired
+        fileUrl
       }
     }
   }

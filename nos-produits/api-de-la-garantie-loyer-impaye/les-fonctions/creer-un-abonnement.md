@@ -1,6 +1,6 @@
 # Créer un Dossier
 
-Cette fonction permet de créer un dossier de Garantie Loyers Impayés
+Cette fonction permet a un propriétaire de souscrire à notre GLI (Garantie Loyer Impayé). Ce dernier créera alors son dossier en renseignant pour quel bien il souhaite souscrire.&#x20;
 
 <pre class="language-graphql"><code class="lang-graphql">mutation {
     createPbiSubscription(

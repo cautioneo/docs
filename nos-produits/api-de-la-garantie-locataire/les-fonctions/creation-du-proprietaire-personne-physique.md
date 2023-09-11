@@ -33,7 +33,7 @@ mutation {
 
 ### Création du propriétaire personne morale
 
-Cette fonction permet de créer un propriétaire en personne morale afin de le rattacher à un bien à louer.
+Cette fonction permet de créer un propriétaire en personne morale ( SCI, SARL ... ) afin de le rattacher à un bien à louer existant.
 
 ```graphql
 mutation {

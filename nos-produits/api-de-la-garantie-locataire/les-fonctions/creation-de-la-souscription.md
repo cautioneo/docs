@@ -1,6 +1,6 @@
 # Créer un dossier Locataire
 
-Cette fonction permet de créer une souscription / un dossier.
+Cette fonction permet de créer une souscription / un dossier pour un locataire ici nous devrons passer L'id du dit locataire obligatoirement comme l'annotation `# Required` nous l'indique.
 
 ```graphql
 mutation {

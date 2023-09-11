@@ -1,6 +1,6 @@
 # Création du bien à louer
 
-Cette fonction permet de créer un bien locatif rattaché à une souscription.
+Cette fonction permet de créer un bien locatif rattaché à une souscription elle comprend par exemple le montant du loyer, le type de bien (Appartement, Maison ...) ainsi que des informations relatives à sa gestion ou à son ameublement.
 
 ```graphql
 mutation {
