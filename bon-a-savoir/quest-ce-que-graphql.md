@@ -48,6 +48,33 @@ mutation uneMutation(
 )
 ```
 
+**ClientMutationId**
+
+Les mutations peuvent être effectuées en Batch (ex: créer plusieurs comptes utilisateur en 1 requête), cependant l'ordre dans lequel sont traitées ses mutations n'est pas nécessairement l'ordre transmit par le client au serveur.
+
+Afin de faire la corrélation entre les mutations d'une même requête, chaque fonctione de mutation peut inclure un argument `clientMutationId` qui est une chaîne de caratère choisie par le client de l'API.
+
+Cette valeur sera retournée à l'identique par le serveur dans la réponse de chaque mutation, ce qui permet au client de ne pas mélanger les résultats des mutations.
+
+```graphql
+mutation createTwoUsers($email1: String!, $email2: String!) {
+  createUser(input: { email: $email1, clientMutationId: "fonction1" }) {
+    user {
+      id
+      email
+    }
+    clientMutationId
+  }
+  createUser(input: { email: $email2, clientMutationId: "fonction2" }) {
+    user {
+      id
+      email
+    }
+    clientMutationId
+  }
+}
+```
+
 #### Subscription
 
 Les `Subscription` sont des requêtes Pub/Sub qui vous permettent d'être alerté en temps réel d'un événement. C'est le serveur d'API qui détermine les types de `Subscription` possibles, leur nomenclature et leurs arguments.
