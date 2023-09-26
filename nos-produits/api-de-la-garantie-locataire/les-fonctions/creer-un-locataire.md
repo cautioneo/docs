@@ -8,18 +8,17 @@ Ainsi après la création d'un utilisateur vous pouvez transmettre son id, ici =
 mutation {
   createRenter(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       userId: "ID"
     }
   ) {
     renter {
       id
       user {
+        id
         email
       }
     }
     errors
-    clientMutationId
   }
 }
 ```
