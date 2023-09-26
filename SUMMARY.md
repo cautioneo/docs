@@ -29,7 +29,6 @@
     * [Obtenir les informations du contrat](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-informations-du-contrat.md)
     * [Renouveler un certificat utilisateur](nos-produits/notre-garantie-locataire/les-fonctions/renouveler-un-certificat-utilisateur.md)
     * [Invalider le certificat d'un utilisateur](nos-produits/notre-garantie-locataire/les-fonctions/invalider-le-certificat-dun-utilisateur.md)
-    * [Obtenir les justificatifs nécessaires d'une souscription](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-justificatifs-necessaires-dune-souscription.md)
   * [🛠 Les fonctions bailleurs](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/README.md)
     * [Inviter un locataire](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/inviter-un-locataire.md)
     * [Renouveler l'invitation](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/renouveler-linvitation.md)
