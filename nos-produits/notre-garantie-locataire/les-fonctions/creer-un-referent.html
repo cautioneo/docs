@@ -810,21 +810,26 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="créer-un-référent">Créer un Référent</h1>
-<p>Crée un référent rattaché à un locataire et à un dossier. Ici nous pouvons transmettre les informations de ce dernier et renseigner l&apos;id du locataire auquel il doit être rattacher ainsi qu&apos;a quel dossier. Le référent devra lui aussi transmettre des justificatifs.</p>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
- createReferent<span class="hljs-punctuation">(</span>
+<p>Les référents sont nécessaires pour les dossiers d&apos;étudiants sans revenus.</p>
+<p>Un seul référent est possible par dossier, même dans le cas d&apos;un couple.</p>
+<p>Il faut avant tout créer un compte utilisateur <a href="../../api-de-la-garantie-locataire/les-fonctions/creer-un-utilisateur.html">comme ceci</a>.</p>
+<p>Puis créer un référent rattaché à un dossier. Ici nous pouvons transmettre les informations de ce dernier et renseigner l&apos;id du compte utilisateur auquel il doit être rattacher ainsi qu&apos;a quel dossier. Le référent devra lui aussi transmettre des justificatifs.</p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> createReferent<span class="hljs-punctuation">(</span><span class="hljs-variable">$subscriptionId</span>: ID<span class="hljs-punctuation">!</span>, <span class="hljs-variable">$userId</span>: ID<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+   createReferent<span class="hljs-punctuation">(</span>
       <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
         <span class="hljs-symbol">subscriptionId</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$subscriptionId</span>
         <span class="hljs-symbol">userId</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$userId</span>
       <span class="hljs-punctuation">}</span>
-    <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
-       referent <span class="hljs-punctuation">{</span>
-            id
-            email
-            firstName
-            lastName
-  <span class="hljs-punctuation">}</span>
+   <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+    referent <span class="hljs-punctuation">{</span>
+       id
+       email
+       firstName
+       lastName
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
 </code></pre>
+<p>le <code>userId</code> est donc l&apos;ID du compte utilisateur &quot;Référent&quot; précédemment créé.</p>
 
                                 
                                 </section>
@@ -868,7 +873,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Créer un Référent","level":"3.1.2.5","depth":3,"next":{"title":"Créer un dossier Locataire","level":"3.1.2.6","depth":3,"path":"nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-de-la-souscription.md","ref":"nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-de-la-souscription.md","articles":[]},"previous":{"title":"Créer un Conjoint","level":"3.1.2.4","depth":3,"path":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-conjoint.md","ref":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-conjoint.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-referent.md","mtime":"2023-09-26T08:47:26.108Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-09-26T08:47:36.406Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Créer un Référent","level":"3.1.2.5","depth":3,"next":{"title":"Créer un dossier Locataire","level":"3.1.2.6","depth":3,"path":"nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-de-la-souscription.md","ref":"nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-de-la-souscription.md","articles":[]},"previous":{"title":"Créer un Conjoint","level":"3.1.2.4","depth":3,"path":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-conjoint.md","ref":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-conjoint.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/notre-garantie-locataire/les-fonctions/creer-un-referent.md","mtime":"2023-09-26T09:30:11.184Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-09-26T09:30:22.692Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
