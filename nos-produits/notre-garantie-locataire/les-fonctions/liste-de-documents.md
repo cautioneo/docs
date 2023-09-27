@@ -5,39 +5,31 @@ Voici comment obtenir la liste des documents justificatifs à fournir pour l'év
 {% hint style="warning" %}
 Chaque situation est différente les justificatifs nécessaires varient en fonction de la CSP et des revenus complémentaires de chaque locataire ou référent du dossier.
 
-L'API vous permettra de déterminer quels justificatifs sont demandés pour chacun des participants au dossier.
+Un bref aperçu des documents demandés est disponible [ici](https://cautioneo.github.io/cautioneo-design/csp.html).
+
+Mais c'est l'API qui vous permettra de déterminer quels justificatifs sont demandés pour chacun des participants au dossier.
 
 Cet appel API est donc très important.
 {% endhint %}
 
 ```graphql
-query getPbiSubscriptionDocuments($id: ID!) {
+query getSubscriptionDocuments($id: ID!) {
     node(id: $id) {
-      ... on PbiSubscription {
+      ... on CautioneoSubscription {
         id
         state
         neededDocumentsLabelsByOwner {
-          labels {
-            category
+          renter { # Le locataire
             title
-          }
-          owner {
-            id
             category
-            firstName
-            lastName
           }
-          referents {
-            labels {
-              category
-              title
-            }
-            owner {
-              id
-              category
-              firstName
-              lastName
-            }
+          partner { # Son conjoint
+            title
+            category
+          }
+          referent { # Le référent du dossier pour les étudiants
+            title
+            category
           }
         }
       }
@@ -45,12 +37,12 @@ query getPbiSubscriptionDocuments($id: ID!) {
   }
 ```
 
-Cette fonction permet de récupérer la liste des documents justificatifs transmis par le bailleur du ou des locataires.
+Cette fonction permet de récupérer la liste des documents justificatifs transmis par le·s locataire·s.
 
 ```graphql
-query getPbiSubscriptionDocuments($id: ID!) {
+query getSubscriptionDocuments($id: ID!) {
     node(id: $id) {
-      ... on PbiSubscription {
+      ... on CautioneoSubscription {
         id
         state
         documents {

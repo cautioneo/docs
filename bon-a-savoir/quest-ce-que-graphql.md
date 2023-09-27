@@ -33,15 +33,85 @@ Certains objets comme `User` ont une date d'expiration dans leur `ID` ce qui les
 
 #### Mutation
 
-C'est le mot clé pour définir une requête d'écriture des données de l'API (équivalent en `REST` : `PUT` / `PATCH` / `DELETE`).
+C'est le mot clé pour définir une requête d'écriture des données de l'API (équivalent en `REST` : `POST` / `PUT` / `PATCH` / `DELETE`).
 
-Elles permettent donc de récupérer les informations d'un objet ou d'une fonction, mais pas d'en modifier la valeur.
+Elles permettent donc de modifier un objet et de récupérer comme dans une `query` les valeurs de cet objet.
 
 Chez Cautioneo nous utilisons la syntaxe [Relay](quest-ce-que-graphql.md#graphql-relay) pour matérialiser les attributs à enregistrer / modifier via l'argument `input` de la fonction de mutation.
 
+Afin de marquer si un argument est obligatoire ou non, la syntaxe GraphQL utilise un `!` après le type d'argument lorsqu'il est obligatoire. Ce qui donne :&#x20;
+
+```graphql
+mutation uneMutation(
+  $arg1: ID! # Required
+  $arg2: String # Optional
+)
+```
+
+**ClientMutationId**
+
+Les mutations peuvent être effectuées en Batch (ex: créer plusieurs comptes utilisateur en 1 requête), cependant l'ordre dans lequel sont traitées ses mutations n'est pas nécessairement l'ordre transmit par le client au serveur.
+
+Afin de faire la corrélation entre les mutations d'une même requête, chaque fonctione de mutation peut inclure un argument `clientMutationId` qui est une chaîne de caratère choisie par le client de l'API.
+
+Cette valeur sera retournée à l'identique par le serveur dans la réponse de chaque mutation, ce qui permet au client de ne pas mélanger les résultats des mutations.
+
+```graphql
+mutation createTwoUsers($email1: String!, $email2: String!) {
+  createUser(input: { email: $email1, clientMutationId: "fonction1" }) {
+    user {
+      id
+      email
+    }
+    clientMutationId
+  }
+  createUser(input: { email: $email2, clientMutationId: "fonction2" }) {
+    user {
+      id
+      email
+    }
+    clientMutationId
+  }
+}
+```
+
 #### Subscription
 
+Les `Subscription` sont des requêtes Pub/Sub qui vous permettent d'être alerté en temps réel d'un événement. C'est le serveur d'API qui détermine les types de `Subscription` possibles, leur nomenclature et leurs arguments.
+
+Elles ont la même syntaxe qu'une mutation.
+
+{% hint style="info" %}
+Le mot clé `Subscription` étant réservé à cet usage, c'est pour cela que l'objet représentant un dossier Cautioneo s'appelle `CautioneoSubscription` ou `PbiSubscription`.
+{% endhint %}
+
 #### Fragments
+
+Les fragments sont des éléments de requête pré-construits et réutilisables.
+
+Ils peuvent être fournis par l'API elle-même ou définie côté client afin de simplifier l'écriture des requêtes.
+
+Elles se présente sous cette forme :&#x20;
+
+```graphql
+fragment UserFragment on User {
+  email
+  firstName
+  lastName
+  gender
+}
+```
+
+Et peuvent être utilisé dans les requêtes comme ceci :&#x20;
+
+```graphql
+query getUserWithFragment($id: ID!) {
+  node(id: $id) {
+    id
+    ...UserFragment
+  }
+}
+```
 
 ### [GraphQL Relay](https://relay.dev/docs/)
 
