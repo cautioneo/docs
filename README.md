@@ -1,4 +1,4 @@
-![gras](.gitbook/assets/fondApi.png)
+![bg](assets/fondApi.png)
 # 🏢 Api Cautioneo !
 
 Bienvenue dans la documentation de l'API Cautioneo !
