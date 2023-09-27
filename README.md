@@ -1,23 +1,5 @@
----
-cover: .gitbook/assets/RenduMaisonCautionéoMaison.png
-coverY: 13.514666666666665
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
-# 🏢 API Cautioneo
+![gras](.gitbook/assets/fondApi.png)
+# 🏢 Api Cautioneo !
 
 Bienvenue dans la documentation de l'API Cautioneo !
 
