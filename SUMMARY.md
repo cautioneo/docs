@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [🏢 API Cautioneo](README.md)
 * [🧑‍🎓 Débuter avec Les Api Cautioneo](debuter-avec-les-api-cautioneo.md)
@@ -9,6 +9,7 @@
 * [Qu'est ce que GraphQL ?](bon-a-savoir/quest-ce-que-graphql.md)
 
 ## Nos produits
+
 * [🤝 Notre Garantie Locataire](nos-produits/notre-garantie-locataire/README.md)
   * [🔍 Débuter avec l'api de la GL](nos-produits/api-de-la-garantie-locataire/debuter-avec-lapi-de-la-gl.md)
   * [🔧 Les fonctions locataires](nos-produits/notre-garantie-locataire/les-fonctions/README.md)
@@ -19,6 +20,7 @@
     * [Créer un Référent](nos-produits/notre-garantie-locataire/les-fonctions/creer-un-referent.md)
     * [Créer un dossier Locataire](nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-de-la-souscription.md)
     * [Obtenir les informations d'une souscription](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-informations-dune-souscription.md)
+    * [Liste des pièces justificatives](nos-produits/notre-garantie-locataire/les-fonctions/liste-de-documents.md)
     * [Ajouter un justificatif à une souscription](nos-produits/api-de-la-garantie-locataire/les-fonctions/ajouter-un-justificatif-a-une-souscription.md)
     * [Obtenir les informations des documents d'une souscription](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-informations-des-documents-dune-souscription.md)
     * [Création du propriétaire](nos-produits/api-de-la-garantie-locataire/les-fonctions/creation-du-proprietaire-personne-physique.md)
@@ -27,7 +29,6 @@
     * [Obtenir les informations du contrat](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-informations-du-contrat.md)
     * [Renouveler un certificat utilisateur](nos-produits/notre-garantie-locataire/les-fonctions/renouveler-un-certificat-utilisateur.md)
     * [Invalider le certificat d'un utilisateur](nos-produits/notre-garantie-locataire/les-fonctions/invalider-le-certificat-dun-utilisateur.md)
-    * [Obtenir les justificatifs nécessaires d'une souscription](nos-produits/api-de-la-garantie-locataire/les-fonctions/obtenir-les-justificatifs-necessaires-dune-souscription.md)
   * [🛠 Les fonctions bailleurs](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/README.md)
     * [Inviter un locataire](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/inviter-un-locataire.md)
     * [Renouveler l'invitation](nos-produits/notre-garantie-locataire/les-fonctions-bailleurs/renouveler-linvitation.md)
@@ -43,12 +44,12 @@
     * [Créer un Référent](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-referent.md)
     * [Créer un État financier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/creer-un-etat-financier.md)
     * [Liste des pièces justificatives](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md)
+    * [Ajouter un justificatif à un dossier](nos-produits/notre-garantie-loyer-impaye/les-fonctions/ajouter-un-justificatif-a-une-souscription.md)
     * [Demander l'évaluation du dossier](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-labonnement.md)
     * [Obtenir un Accord de Garantie](nos-produits/notre-garantie-loyer-impaye/les-fonctions/obtenir-un-accord-de-garantie.md)
     * [Créer un compte bancaire SEPA](nos-produits/notre-garantie-loyer-impaye/les-fonctions/creer-un-compte-bancaire-sepa.md)
     * [Valider l'envoi du formulaire de souscription](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-lenvoi-du-formulaire-de-souscription.md)
     * [Abandonner le dossier](nos-produits/notre-garantie-loyer-impaye/les-fonctions/abandonner-le-dossier.md)
-    * [Lister les documents des ou du  locataires](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/lister-les-documents-des-ou-du-locataires.md)
     * [Valider les informations CB](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-les-informations-cb.md)
     * [Valider la méthode de paiement](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-la-methode-de-paiement.md)
     * [Valider les contrats](nos-produits/api-de-la-garantie-loyer-impaye/les-fonctions/valider-les-contrats.md)
