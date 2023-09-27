@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [🏢 API Cautioneo](README.md)
 * [🧑‍🎓 Débuter avec Les Api Cautioneo](debuter-avec-les-api-cautioneo.md)
@@ -9,7 +9,6 @@
 * [Qu'est ce que GraphQL ?](bon-a-savoir/quest-ce-que-graphql.md)
 
 ## Nos produits
-
 * [🤝 Notre Garantie Locataire](nos-produits/notre-garantie-locataire/README.md)
   * [🔍 Débuter avec l'api de la GL](nos-produits/api-de-la-garantie-locataire/debuter-avec-lapi-de-la-gl.md)
   * [🔧 Les fonctions locataires](nos-produits/notre-garantie-locataire/les-fonctions/README.md)
