@@ -16,5 +16,5 @@ Vous êtes prêt à faire vos premières requêtes ? [Débuter](debuter-avec-les
 
 ### Envie d'approfondir ?
 
-* [Qu'est ce que GraphQL ?](bon-a-savoir/quest-ce-que-graphql.md)
+* [Qu'est ce que GraphQL ?](bon-a-savoir/graphql.md)
 * [Glossaire](bon-a-savoir/glossaire.md)

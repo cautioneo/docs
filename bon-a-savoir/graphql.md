@@ -1,4 +1,4 @@
-# 🧑🏫 Qu'est ce que GraphQL ?
+# ⚛ Qu'est ce que GraphQL ?
 
 ### Introduction
 
@@ -37,7 +37,7 @@ C'est le mot clé pour définir une requête d'écriture des données de l'API (
 
 Elles permettent donc de modifier un objet et de récupérer comme dans une `query` les valeurs de cet objet.
 
-Chez Cautioneo nous utilisons la syntaxe [Relay](quest-ce-que-graphql.md#graphql-relay) pour matérialiser les attributs à enregistrer / modifier via l'argument `input` de la fonction de mutation.
+Chez Cautioneo nous utilisons la syntaxe [Relay](graphql.md#graphql-relay) pour matérialiser les attributs à enregistrer / modifier via l'argument `input` de la fonction de mutation.
 
 Afin de marquer si un argument est obligatoire ou non, la syntaxe GraphQL utilise un `!` après le type d'argument lorsqu'il est obligatoire. Ce qui donne :&#x20;
 
