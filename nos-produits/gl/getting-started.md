@@ -1,4 +1,4 @@
-# 🔍 Débuter avec l'API de la GL
+# ▶ Débuter avec l'API de la GL
 
 L'étude d'un dossier demande la récolte d'un grand nombre d'informations, sur les locataires et leurs revenus, sur le logement et sur le bailleur.
 

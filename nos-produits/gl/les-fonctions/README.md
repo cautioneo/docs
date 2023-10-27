@@ -1,4 +1,4 @@
-# 🔧 Les fonctions
+# ⚙ Les fonctions locataires
 
 ### Cette rubrique regroupe toutes les foncions inhérentes à l'Api Garantie locataire.
 

@@ -1,4 +1,4 @@
-# 🔍 Débuter avec l'api de la GLI
+# ▶ Débuter avec l'api de la GLI
 
 L'étude d'un dossier demande la récolte d'un grand nombre d'informations, sur les locataires et leurs revenus, le logement à assurer et sur le bailleur.
 

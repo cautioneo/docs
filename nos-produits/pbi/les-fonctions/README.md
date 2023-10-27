@@ -1,4 +1,4 @@
-# 🔧 Les fonctions
+# ⚙ Les fonctions
 
 Cette rubrique regroupe toutes les fonctions inhérentes à l'Api Garantie Loyer Impayé.
 
