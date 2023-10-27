@@ -6,11 +6,8 @@ Cette fonction permet de créer un bien locatif rattaché à une souscription el
 mutation {
   createProperty(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       subscriptionId: "ID"
       landlordId: "ID"
-      floor: 1
-      nbRooms: 2
       rentAmount: 555
       rentalCharges: 0
       rentWithoutCharges: 555

@@ -1,4 +1,4 @@
-# Création du propriétaire
+# Création du bailleur
 
 ### Création du propriétaire personne physique
 
@@ -8,7 +8,6 @@ Cette fonction permet de créer un propriétaire en personne physique afin de le
 mutation {
   createLandlord(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       firstName: "John"
       lastName: "Doe"
       birthdate: "1990-01-01"
@@ -39,7 +38,6 @@ Cette fonction permet de créer un propriétaire en personne morale ( SCI, SARL 
 mutation {
   createProprietor(
     input: {
-      clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
       company: {
         siren: "XXXXXXXX"
         email: "proprietor@test.org"

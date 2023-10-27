@@ -10,8 +10,8 @@ Une fonction de l'API vous permet également de les connaitre pour une souscript
 mutation {
   addDocumentBase64(
     input: {
-      documentableId: "ID"
-      ownerId: "ID"
+      documentableId: "subscription_ID"
+      ownerId: "user_ID"
       base64: "iVBORw0KGgoAAAANSUhEUgAAAsAAAAGMAQMAAADuk4YmAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADlJREFUeF7twDEBAAAAwiD7p7bGDlgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAGJrAABgPqdWQAAAABJRU5ErkJggg=="
       label: {
         category: INCOME_PROOF

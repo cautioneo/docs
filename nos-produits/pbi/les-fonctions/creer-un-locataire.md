@@ -14,7 +14,6 @@ Lesquels seront couvert par la garantie.
 mutation {
     createGliRenter(
         input: {
-            clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
             pbiSubscriptionId: "ID"
             firstName: "Pierre"
             lastName: "Henri"

@@ -6,6 +6,7 @@
 mutation {
   createLandlord(
     input: {
+      userId: "ID" # Required
       firstName: "John"
       lastName: "Doe"
       birthdate: "1990-01-01"
@@ -34,6 +35,7 @@ mutation {
   createProprietor(
     input: {
       company: {
+        userId: "ID" # Required
         siren: "XXXXXXXX" # Required
         email: "proprietor@test.org"
         legalName: "Proprietor"

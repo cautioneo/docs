@@ -10,14 +10,17 @@ mutation {
     input: {
       landlordId: "ID"
       furnished: false
-      address: "33 rue de l'api"
       rentAmount: 950
       rentWithoutCharges: 900
       rentalCharges: 50
       deposit: 1000
-      surface: 35.5
-      description: "Magnifique triplex avec vue sur la mer"
-       }
+      address: {
+        street: "33 rue de l'api"
+        postalCode: "59000"
+        city: "Lille"
+        country: "FR"
+      }
+    }
   ) {
     property {
       id
@@ -37,13 +40,10 @@ mutation {
         input: {
             landlordId: "ID"
             furnished: false
-            address: "33 rue de l'api"
             rentAmount: 1000
             rentWithoutCharges: 900
             rentalCharges: 100
             deposit: 1000
-            surface: 35.5
-            description: "Magnifique triplex les pieds dans l'eau"
         }
     ) {
      property {
