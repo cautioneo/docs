@@ -4,7 +4,7 @@ Pour signaler à Cautioneo que le dossier / souscription est prête à être tra
 
 Une fois cette demande faite, l'équipe Cautioneo traitera le dossier sous 48H ouvrés et si le dossier est validé, fournira un Accord de Garantie.
 
-Si le dossier est incomplet, un mail sera envoyé au locataire pour lui demander des pièces justificatives supplémentaires (voir: [Liste des pièces justificatives](../../api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md)) ou de modifier une pièce justificative qui n'est pas lisible.
+Si le dossier est incomplet, un mail sera envoyé au locataire pour lui demander des pièces justificatives supplémentaires (voir: [Liste des pièces justificatives](../../pbi/les-fonctions/liste-de-documents.md)) ou de modifier une pièce justificative qui n'est pas lisible.
 
 ```graphql
 mutation {

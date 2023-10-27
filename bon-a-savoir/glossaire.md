@@ -1,4 +1,4 @@
-# Glossaire
+# 🎤 Glossaire
 
 Voici une liste du principal vocabulaire de l'API Cautioneo, vous y trouverez les objets de l'API, ainsi que leur fonction.
 

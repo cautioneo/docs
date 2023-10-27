@@ -1,4 +1,4 @@
-# Qu'est ce que GraphQL ?
+# 🧑🏫 Qu'est ce que GraphQL ?
 
 ### Introduction
 

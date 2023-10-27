@@ -4,7 +4,7 @@ Cette fonction permet d'ajouter un document justificatif de revenus, de capital 
 
 Ces informations sont catégorisées selon la situation professionnelle de l'utilisateur, la liste est disponible [ici](https://cautioneo.github.io/cautioneo-design/csp.html).
 
-Une fonction de l'API vous permet également de les connaitre pour une souscription donnée [ici](../../api-de-la-garantie-loyer-impaye/les-fonctions/liste-de-documents.md).
+Une fonction de l'API vous permet également de les connaitre pour une souscription donnée [ici](liste-de-documents.md).
 
 ```graphql
 mutation {

@@ -5,11 +5,11 @@ Cette fonction permet a un propriétaire de souscrire à notre GLI (Garantie Loy
 <pre class="language-graphql"><code class="lang-graphql">mutation {
     createPbiSubscription(
         input: {
-            clientMutationId: "YOUR_CHOICE_NOT_MANDATORY"
             propertyId: "ID"
             situation: ALONE
             comment: "Je suis très content des services de Cautioneo"
             ownerSendDocuments: true
+            leaseStartOn: "2023-05-10"
         }
 <strong>    ) { 
 </strong>    pbiSubscription {

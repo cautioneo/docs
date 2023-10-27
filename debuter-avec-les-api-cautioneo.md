@@ -55,6 +55,6 @@ _Dans le header de la requête HTTP_
 
 Trouvez l'ensemble de la documentions relative à nos Divers Api dans les rubriques ci-dessous.
 
-[Notre Garantie Locataire](nos-produits/notre-garantie-locataire/)
+[Notre Garantie Locataire](nos-produits/gl/)
 
-[Notre Garantie Loyer Impayé](nos-produits/notre-garantie-loyer-impaye/)
+[Notre Garantie Loyer Impayé](nos-produits/pbi/)

@@ -21,8 +21,9 @@ mutation {
             category: MILITARY
             seniority: MORE_THAN_12_MOUNTHS
             rentSeniority: MORE_THAN_6_MOUNTHS
-            employmentContractEndOn: "1990-04-01"
-            trialPeriodEndOn: "1990-04-01"
+            employmentContractEndOn: "2023-04-01"
+            birthdate: "1990-06-15"
+            trialPeriodEndOn: "2023-04-01"
         }
     ) { 
         createGliRenter {
@@ -39,5 +40,5 @@ mutation {
 {% hint style="info" %}
 Un locataire étudiant sans revenu peut présenter jusqu'à deux référents de confiance.
 
-Voir [Créer un référent](../../notre-garantie-locataire/les-fonctions/creer-un-referent.md).
+Voir [Créer un référent](creer-un-referent.md).
 {% endhint %}
