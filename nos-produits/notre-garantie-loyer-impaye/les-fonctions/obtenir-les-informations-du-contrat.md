@@ -9,7 +9,7 @@ Vous pouvez retrouver les status de ce dernier [ici](https://studio.apollographq
 ```graphql
 query {
   node(id: "ID") {
-    ... on CautioneoSubscription {
+    ... on PbiSubscription {
       contract {
         id
         state

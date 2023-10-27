@@ -37,6 +37,16 @@ query getSubscriptionDocuments($id: ID!) {
   }
 ```
 
+{% hint style="info" %}
+Il peut arriver que des documents complémentaires soient nécessaires, dans ce cas, seuls les documents complémentaires demandés seront listés dans cet appel (au lieu des documents standards).
+
+Soit il s'agit d'un document standard et donc `category` sera rempli et `title` nulle.
+
+Soit il s'agit d'un document spécial et dans ce cas, `category` sera ``OTHER et `title` sera l'intitulé du document demandé.``
+
+En fonction de ces cas, il faut donc afficher `title` (qui sera en Français) si il est présent, ou dans le cas contraire, afficher votre traduction correspondante à la valeur de `category`.
+{% endhint %}
+
 Cette fonction permet de récupérer la liste des documents justificatifs transmis par le·s locataire·s.
 
 ```graphql

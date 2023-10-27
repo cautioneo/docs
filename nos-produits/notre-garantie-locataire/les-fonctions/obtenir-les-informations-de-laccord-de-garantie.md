@@ -1,6 +1,6 @@
 # Obtenir les informations de l'accord de garantie
 
-Cette fonction de connaitre le statut de l'accord ( expiré ou non ) ainsi que de récupérer l'url grâce à laquelle le visionnage de ce dernier est possible.
+Cette fonction vous permet de connaitre le statut de l'accord (expiré ou non) ainsi que de récupérer son URL grâce à laquelle le visionnage / téléchargement de ce dernier est possible.
 
 ```graphql
 query {
