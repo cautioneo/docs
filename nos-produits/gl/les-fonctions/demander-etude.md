@@ -1,6 +1,6 @@
 # Demander l'étude du dossier
 
-Pour signaler à Cautioneo que le dossier / souscription est prête à être traitée, vous devez lancer la mutation `evaluateSubscriptionDocuments`.
+Pour signaler à Cautioneo que le dossier / souscription est prêt à être traité, vous devez lancer la mutation `evaluateSubscriptionDocuments`.
 
 Une fois cette demande faite, l'équipe Cautioneo traitera le dossier sous 48H ouvrés et si le dossier est validé, fournira un [Accord de Garantie](obtenir-les-informations-de-laccord-de-garantie.md).
 
