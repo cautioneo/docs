@@ -12,10 +12,10 @@ Cette API suit les conventions de schema [GraphQL Relay](https://relay.dev/)
 
 ## Environnement URL
 
-| Environnement | URL                                                                                           |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| Production    | [https://api.cautioneo.com/graphql](https://api.cautioneo.com/graphql)                        |
-| Staging       | [https://cautioneo-app-staging.caut.io/graphq](https://cautioneo-app-staging.caut.io/graphq)l |
+| Environnement | URL                                                                                            |
+| ------------- | ---------------------------------------------------------------------------------------------- |
+| Production    | [https://api.cautioneo.com/graphql](https://api.cautioneo.com/graphql)                         |
+| Staging       | [https://cautioneo-app-staging.caut.io/graphql](https://cautioneo-app-staging.caut.io/graphql) |
 
 ## Authorization <a href="#authorization" id="authorization"></a>
 
