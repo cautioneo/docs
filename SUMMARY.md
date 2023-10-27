@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏢 API Cautioneo](README.md)
-* [🧑‍🎓 Débuter avec les APIs Cautioneo](debuter-avec-les-api-cautioneo.md)
+* [🧑‍🎓 Débuter avec les APIs Cautioneo](getting-started.md)
 
 ## Bon à savoir
 

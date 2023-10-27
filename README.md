@@ -12,7 +12,7 @@ Bonne visite !
 
 ### Envie de tester ?
 
-Vous êtes prêt à faire vos premières requêtes ? [Débuter](debuter-avec-les-api-cautioneo.md)[ immédiatement !](debuter-avec-les-api-cautioneo.md)
+Vous êtes prêt à faire vos premières requêtes ? [Débuter](getting-started.md)[ immédiatement !](getting-started.md)
 
 ### Envie d'approfondir ?
 
