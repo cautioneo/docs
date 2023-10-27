@@ -2,7 +2,7 @@
 
 Pour signaler à Cautioneo que le dossier / souscription est prête à être traitée, vous devez lancer la mutation `evaluateSubscriptionDocuments`.
 
-Une fois cette demande faite, l'équipe Cautioneo traitera le dossier sous 48H ouvrés et si le dossier est validé, fournira un Accord de Garantie.
+Une fois cette demande faite, l'équipe Cautioneo traitera le dossier sous 48H ouvrés et si le dossier est validé, fournira un [Accord de Garantie](obtenir-les-informations-de-laccord-de-garantie.md).
 
 Si le dossier est incomplet, un mail sera envoyé au locataire pour lui demander des pièces justificatives supplémentaires (voir: [Liste des pièces justificatives](liste-de-documents.md)) ou de modifier une pièce justificative qui n'est pas lisible.
 
