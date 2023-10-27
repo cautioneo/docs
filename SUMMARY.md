@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏢 API Cautioneo](README.md)
-* [🧑‍🎓 Débuter avec Les Api Cautioneo](debuter-avec-les-api-cautioneo.md)
+* [🧑‍🎓 Débuter avec les APIs Cautioneo](debuter-avec-les-api-cautioneo.md)
 
 ## Bon à savoir
 
@@ -11,8 +11,8 @@
 ## Nos produits
 
 * [👤 Garantie Locataire](nos-produits/gl/README.md)
-  * [🔍 Débuter avec l'API de la GL](nos-produits/gl/debuter-avec-lapi-de-la-gl.md)
-  * [🔧 Les fonctions locataires](nos-produits/gl/les-fonctions/README.md)
+  * [▶ Débuter avec l'API de la GL](nos-produits/gl/debuter-avec-lapi-de-la-gl.md)
+  * [⚙ Les fonctions locataires](nos-produits/gl/les-fonctions/README.md)
     * [Créer un Utilisateur](nos-produits/gl/les-fonctions/creer-un-utilisateur.md)
     * [Créer un Locataire](nos-produits/gl/les-fonctions/creer-un-locataire.md)
     * [Création des Données financières](nos-produits/gl/les-fonctions/creation-des-donnees-financieres.md)
@@ -35,8 +35,8 @@
     * [Renouveler l'invitation](nos-produits/gl/les-fonctions-bailleurs/renouveler-linvitation.md)
     * [Mettre à jour le SIREN d'un agent immobilier](nos-produits/gl/les-fonctions-bailleurs/mettre-a-jour-le-siren-dun-agent-immobilier.md)
 * [🏠 Garantie Loyer Impayé](nos-produits/pbi/README.md)
-  * [🔍 Débuter avec l'api de la GLI](nos-produits/pbi/debuter-avec-lapi-de-la-gli.md)
-  * [🔧 Les fonctions](nos-produits/pbi/les-fonctions/README.md)
+  * [▶ Débuter avec l'api de la GLI](nos-produits/pbi/debuter-avec-lapi-de-la-gli.md)
+  * [⚙ Les fonctions](nos-produits/pbi/les-fonctions/README.md)
     * [Créer un compte Utilisateur](nos-produits/pbi/les-fonctions/creer-un-utilisateur.md)
     * [Créer un Bailleur](nos-produits/pbi/les-fonctions/creation-du-proprietaire-personne-physique.md)
     * [Créer un Bien immobilier](nos-produits/pbi/les-fonctions/creer-un-bien-immobilier.md)
