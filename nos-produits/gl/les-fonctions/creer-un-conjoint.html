@@ -6,7 +6,7 @@
         <title>Créer un Conjoint · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 5.1.1">
+        <meta name="generator" content="HonKit 5.1.5">
         
         
         
@@ -825,21 +825,21 @@
                                 <h1 id="créer-un-conjoint">Créer un Conjoint</h1>
 <p>Pour créer un conjoint rattaché au locataire principal du dossier, vous pouvez soit : </p>
 <ul>
-<li>Créer le conjoint avec quelques informations. Puis mettre à jours les informations détaillées de l&apos;User créé par la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/CreatePartnerMutationInput" target="_blank"><code>createPartner</code></a> grâce à la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/UpdateUserMutationInput" target="_blank"><code>updateUser</code></a>.</li>
-<li>Créer un compte utilisateur avec une adresse email et réutiliser cette adresse email dans la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/CreatePartnerMutationInput" target="_blank"><code>createPartner</code></a> afin d&apos;associer ce compte utilisateur avec le locataire principal en tant que conjoint.</li>
+<li>Créer le conjoint avec quelques informations. Puis mettre à jours les informations détaillées de l'User créé par la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/CreatePartnerMutationInput" target="_blank"><code>createPartner</code></a> grâce à la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/UpdateUserMutationInput" target="_blank"><code>updateUser</code></a>.</li>
+<li>Créer un compte utilisateur avec une adresse email et réutiliser cette adresse email dans la fonction <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/inputs/CreatePartnerMutationInput" target="_blank"><code>createPartner</code></a> afin d'associer ce compte utilisateur avec le locataire principal en tant que conjoint.</li>
 </ul>
 <p></p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>Définir le statut du couple est obligatoire dans le dossier (champ: <a href="https://studio.apollographql.com/public/Cautioneo-API/variant/staging/schema/reference/enums/SubscriptionSituation" target="_blank"><code>situation</code></a>).</p>
 </div></div><p></p>
-<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Si vous ne disposez pas des informations de contact du conjoint, vous pouvez ne pas renseigner l&apos;<code>email</code> de celui-ci un email factice lui sera attribué et vous pourrez le renseigner avec la fonction <code>updateUser</code>.</p>
+<p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Si vous ne disposez pas des informations de contact du conjoint, vous pouvez ne pas renseigner l'<code>email</code> de celui-ci un email factice lui sera attribué et vous pourrez le renseigner avec la fonction <code>updateUser</code>.</p>
 </div></div><p></p>
 <pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
   createPartner<span class="hljs-punctuation">(</span>
     <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-symbol">userId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ID_DU_LOCATAIRE_PRINCIPAL&quot;</span>
+      <span class="hljs-symbol">userId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ID_DU_LOCATAIRE_PRINCIPAL"</span>
       <span class="hljs-symbol">category</span><span class="hljs-punctuation">:</span> CDI <span class="hljs-comment"># CSP du conjoint</span>
       <span class="hljs-symbol">civilStatus</span><span class="hljs-punctuation">:</span> MARRIED
       <span class="hljs-symbol">gender</span><span class="hljs-punctuation">:</span> MALE
-      <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;conjoint@gmail.com&quot;</span>
+      <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"conjoint@gmail.com"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
     partner <span class="hljs-punctuation">{</span>
@@ -893,7 +893,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Créer un Conjoint","level":"3.1.2.4","depth":3,"next":{"title":"Créer un Référent","level":"3.1.2.5","depth":3,"path":"nos-produits/gl/les-fonctions/creer-un-referent.md","ref":"nos-produits/gl/les-fonctions/creer-un-referent.md","articles":[]},"previous":{"title":"Création des Données financières","level":"3.1.2.3","depth":3,"path":"nos-produits/gl/les-fonctions/creation-des-donnees-financieres.md","ref":"nos-produits/gl/les-fonctions/creation-des-donnees-financieres.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/gl/les-fonctions/creer-un-conjoint.md","mtime":"2023-10-27T11:03:10.962Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-27T11:03:19.939Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Créer un Conjoint","level":"3.1.2.4","depth":3,"next":{"title":"Créer un Référent","level":"3.1.2.5","depth":3,"path":"nos-produits/gl/les-fonctions/creer-un-referent.md","ref":"nos-produits/gl/les-fonctions/creer-un-referent.md","articles":[]},"previous":{"title":"Création des Données financières","level":"3.1.2.3","depth":3,"path":"nos-produits/gl/les-fonctions/creation-des-donnees-financieres.md","ref":"nos-produits/gl/les-fonctions/creation-des-donnees-financieres.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/gl/les-fonctions/creer-un-conjoint.md","mtime":"2025-06-18T13:15:55.195Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:16:08.243Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

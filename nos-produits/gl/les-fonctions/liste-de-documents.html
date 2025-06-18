@@ -6,7 +6,7 @@
         <title>Liste des pièces justificatives · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 5.1.1">
+        <meta name="generator" content="HonKit 5.1.5">
         
         
         
@@ -823,10 +823,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="liste-des-pièces-justificatives">Liste des pièces justificatives</h1>
-<p>Voici comment obtenir la liste des documents justificatifs à fournir pour l&apos;évaluation du dossier par Cautioneo.</p>
+<p>Voici comment obtenir la liste des documents justificatifs à fournir pour l'évaluation du dossier par Cautioneo.</p>
 <p></p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>Chaque situation est différente les justificatifs nécessaires varient en fonction de la CSP et des revenus complémentaires de chaque locataire ou référent du dossier.</p>
 <p>Un bref aperçu des documents demandés est disponible <a href="https://cautioneo.github.io/cautioneo-design/csp.html" target="_blank">ici</a>.</p>
-<p>Mais c&apos;est l&apos;API qui vous permettra de déterminer quels justificatifs sont demandés pour chacun des participants au dossier.</p>
+<p>Mais c'est l'API qui vous permettra de déterminer quels justificatifs sont demandés pour chacun des participants au dossier.</p>
 <p>Cet appel API est donc très important.</p>
 </div></div><p></p>
 <pre><code class="lang-graphql"><span class="hljs-keyword">query</span> getSubscriptionDocuments<span class="hljs-punctuation">(</span><span class="hljs-variable">$id</span>: ID<span class="hljs-punctuation">!</span><span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
@@ -853,8 +853,8 @@
   <span class="hljs-punctuation">}</span>
 </code></pre>
 <p></p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Il peut arriver que des documents complémentaires soient nécessaires, dans ce cas, seuls les documents complémentaires demandés seront listés dans cet appel (au lieu des documents standards).</p>
-<p>Soit il s&apos;agit d&apos;un document standard et donc <code>category</code> sera rempli et <code>title</code> nulle.</p>
-<p>Soit il s&apos;agit d&apos;un document spécial et dans ce cas, <code>category</code> sera <code>OTHER et `title` sera l&apos;intitulé du document demandé.</code></p>
+<p>Soit il s'agit d'un document standard et donc <code>category</code> sera rempli et <code>title</code> nulle.</p>
+<p>Soit il s'agit d'un document spécial et dans ce cas, <code>category</code> sera <code>OTHER et `title` sera l'intitulé du document demandé.</code></p>
 <p>En fonction de ces cas, il faut donc afficher <code>title</code> (qui sera en Français) si il est présent, ou dans le cas contraire, afficher votre traduction correspondante à la valeur de <code>category</code>.</p>
 </div></div><p></p>
 <p>Cette fonction permet de récupérer la liste des documents justificatifs transmis par le·s locataire·s.</p>
@@ -927,7 +927,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Liste des pièces justificatives","level":"3.1.2.8","depth":3,"next":{"title":"Ajouter un justificatif à une souscription","level":"3.1.2.9","depth":3,"path":"nos-produits/gl/les-fonctions/ajouter-un-justificatif-a-une-souscription.md","ref":"nos-produits/gl/les-fonctions/ajouter-un-justificatif-a-une-souscription.md","articles":[]},"previous":{"title":"Obtenir les informations d'une souscription","level":"3.1.2.7","depth":3,"path":"nos-produits/gl/les-fonctions/obtenir-les-informations-dune-souscription.md","ref":"nos-produits/gl/les-fonctions/obtenir-les-informations-dune-souscription.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/gl/les-fonctions/liste-de-documents.md","mtime":"2023-10-27T11:03:10.962Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-10-27T11:03:19.939Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Liste des pièces justificatives","level":"3.1.2.8","depth":3,"next":{"title":"Ajouter un justificatif à une souscription","level":"3.1.2.9","depth":3,"path":"nos-produits/gl/les-fonctions/ajouter-un-justificatif-a-une-souscription.md","ref":"nos-produits/gl/les-fonctions/ajouter-un-justificatif-a-une-souscription.md","articles":[]},"previous":{"title":"Obtenir les informations d'une souscription","level":"3.1.2.7","depth":3,"path":"nos-produits/gl/les-fonctions/obtenir-les-informations-dune-souscription.md","ref":"nos-produits/gl/les-fonctions/obtenir-les-informations-dune-souscription.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/gl/les-fonctions/liste-de-documents.md","mtime":"2025-06-18T13:15:55.195Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:16:08.243Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
