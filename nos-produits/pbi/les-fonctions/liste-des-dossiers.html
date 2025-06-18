@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Créer un Bailleur · HonKit</title>
+        <title>Liste des dossiers · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.5">
@@ -64,10 +64,8 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="creer-un-bien-immobilier.html" />
     
-    
-    <link rel="prev" href="creer-un-utilisateur.html" />
+    <link rel="prev" href="choisir-le-paiement-par-facture.html" />
     
 
     </head>
@@ -546,7 +544,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.2.2.2" data-path="creation-du-proprietaire-personne-physique.html">
+        <li class="chapter " data-level="3.2.2.2" data-path="creation-du-proprietaire-personne-physique.html">
             
                 <a href="creation-du-proprietaire-personne-physique.html">
             
@@ -767,7 +765,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.2.19" data-path="liste-des-dossiers.html">
+        <li class="chapter active" data-level="3.2.2.19" data-path="liste-des-dossiers.html">
             
                 <a href="liste-des-dossiers.html">
             
@@ -820,7 +818,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Créer un Bailleur</a>
+        <a href="../../.." >Liste des dossiers</a>
     </h1>
 </div>
 
@@ -835,57 +833,84 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="créer-un-bailleur">Créer un Bailleur</h1>
-<h3 id="création-du-propriétaire-personne-physique">Création du propriétaire personne physique</h3>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
-  createLandlord<span class="hljs-punctuation">(</span>
-    <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-symbol">userId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ID"</span> <span class="hljs-comment"># Required</span>
-      <span class="hljs-symbol">firstName</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"John"</span>
-      <span class="hljs-symbol">lastName</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Doe"</span>
-      <span class="hljs-symbol">birthdate</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"1990-01-01"</span>
-      <span class="hljs-symbol">birthplace</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Lille"</span>
-      <span class="hljs-symbol">gender</span><span class="hljs-punctuation">:</span> MALE
-      <span class="hljs-symbol">address</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-symbol">street</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"165 avenue de Bretagne"</span>
-        <span class="hljs-symbol">postalcode</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"59800"</span>
-        <span class="hljs-symbol">city</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Lille"</span>
-        <span class="hljs-symbol">country</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FR"</span>
-      <span class="hljs-punctuation">}</span>
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
-    property <span class="hljs-punctuation">{</span>
-      id
-    <span class="hljs-punctuation">}</span>
-    errors
+                                <h1 id="lister-mes-dossiers">Lister mes dossiers</h1>
+<p>Voici comment obtenir la liste des dossiers d'une agence.</p>
+<p>Il faut donc disposer de l'ID de cette agence.</p>
+<p>Les paramètres <code>first</code> et <code>after</code> concernent la pagination (ex: first: 100, after: 'abc').
+Le paramètre <code>after</code> correspond à la valeur retournée par l'API dans <code>pageInfo.endCursor</code>.
+<a href="https://graphql.org/learn/pagination/#pagination-and-edges" target="_blank">Voir la documentation sur la pagination par curseur</a></p>
+<pre><code class="lang-graphql"><span class="hljs-keyword">query</span> getInvitationsOrSubscriptions<span class="hljs-punctuation">(</span><span class="hljs-variable">$agencyId</span>: ID<span class="hljs-punctuation">!</span>, <span class="hljs-variable">$first</span>: Int, <span class="hljs-variable">$after</span>: String<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+  node<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$agencyId</span>) <span class="hljs-punctuation">{</span>
+    <span class="hljs-punctuation">...</span>TenantsForRealtorFragment
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
-</code></pre>
-<h3 id="création-du-propriétaire-personne-morale-ex--sci">Création du propriétaire personne morale (ex:  SCI)</h3>
-<pre><code class="lang-graphql"><span class="hljs-keyword">mutation</span> <span class="hljs-punctuation">{</span>
-  createProprietor<span class="hljs-punctuation">(</span>
-    <span class="hljs-symbol">input</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-symbol">company</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-symbol">userId</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ID"</span> <span class="hljs-comment"># Required</span>
-        <span class="hljs-symbol">siren</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"XXXXXXXX"</span> <span class="hljs-comment"># Required</span>
-        <span class="hljs-symbol">email</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"proprietor@test.org"</span>
-        <span class="hljs-symbol">legalName</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Proprietor"</span>
-        <span class="hljs-symbol">creationDate</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2020-01-01"</span>
-        <span class="hljs-symbol">address</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-          <span class="hljs-symbol">street</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"165 avenue de Bretagne"</span>
-          <span class="hljs-symbol">postalcode</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"59000"</span>
-          <span class="hljs-symbol">city</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Lille"</span>
-          <span class="hljs-symbol">country</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"FR"</span>
-        <span class="hljs-punctuation">}</span>
-        <span class="hljs-symbol">category</span><span class="hljs-punctuation">:</span> SARL
+
+<span class="hljs-keyword">fragment</span> PageInfoFragment <span class="hljs-keyword">on</span> PageInfo <span class="hljs-punctuation">{</span>
+    hasPreviousPage
+    hasNextPage
+    endCursor
+    startCursor
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">fragment</span> TenantPbiSubscriptionFragment <span class="hljs-keyword">on</span> PbiSubscription <span class="hljs-punctuation">{</span>
+    archived
+    id
+    state
+    createdAt
+    updatedAt
+    leaseStartOn
+    renters <span class="hljs-punctuation">{</span>
+      nodes <span class="hljs-punctuation">{</span>
+        id
+        firstName
+        lastName
       <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
-    proprietor <span class="hljs-punctuation">{</span>
-      id
+    eligibility <span class="hljs-punctuation">{</span>
+      eligible
+      rentAmount
+      maxRentWithoutDeposit
+      maxRentWithDeposit
+      maxCashDeposit
     <span class="hljs-punctuation">}</span>
-    errors
-  <span class="hljs-punctuation">}</span>
+    contract <span class="hljs-punctuation">{</span>
+      reference
+    <span class="hljs-punctuation">}</span>
+    property <span class="hljs-punctuation">{</span>
+      rentAmount
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">fragment</span> TenantInvitationFragment <span class="hljs-keyword">on</span> Invitation <span class="hljs-punctuation">{</span>
+    id
+    acceptUrl
+    archived
+    category
+    guestPhone
+    guestName
+    guestEmail
+    hostName
+    state
+    createdAt
+    updatedAt
+<span class="hljs-punctuation">}</span>
+
+<span class="hljs-keyword">fragment</span> TenantsForRealtorFragment <span class="hljs-keyword">on</span> Realtor <span class="hljs-punctuation">{</span>
+    tenants<span class="hljs-punctuation">(</span>
+      <span class="hljs-symbol">first</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$first</span>
+      <span class="hljs-symbol">after</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$after</span>
+    <span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
+      edges <span class="hljs-punctuation">{</span>
+        node <span class="hljs-punctuation">{</span>
+          id
+          <span class="hljs-punctuation">...</span>TenantInvitationFragment
+          <span class="hljs-punctuation">...</span>TenantPbiSubscriptionFragment
+        <span class="hljs-punctuation">}</span>
+      <span class="hljs-punctuation">}</span>
+      pageInfo <span class="hljs-punctuation">{</span>
+        <span class="hljs-punctuation">...</span>PageInfoFragment
+      <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
 
@@ -915,14 +940,10 @@
 
             
                 
-                <a href="creer-un-utilisateur.html" class="navigation navigation-prev " aria-label="Previous page: Créer un compte Utilisateur">
+                <a href="choisir-le-paiement-par-facture.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Choisir le paiement par facture">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="creer-un-bien-immobilier.html" class="navigation navigation-next " aria-label="Next page: Créer un Bien immobilier">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -931,7 +952,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Créer un Bailleur","level":"3.2.2.2","depth":3,"next":{"title":"Créer un Bien immobilier","level":"3.2.2.3","depth":3,"path":"nos-produits/pbi/les-fonctions/creer-un-bien-immobilier.md","ref":"nos-produits/pbi/les-fonctions/creer-un-bien-immobilier.md","articles":[]},"previous":{"title":"Créer un compte Utilisateur","level":"3.2.2.1","depth":3,"path":"nos-produits/pbi/les-fonctions/creer-un-utilisateur.md","ref":"nos-produits/pbi/les-fonctions/creer-un-utilisateur.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/pbi/les-fonctions/creation-du-proprietaire-personne-physique.md","mtime":"2025-06-18T13:27:33.793Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:28:15.929Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Liste des dossiers","level":"3.2.2.19","depth":3,"previous":{"title":"Choisir le paiement par facture","level":"3.2.2.18","depth":3,"path":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","ref":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/pbi/les-fonctions/liste-des-dossiers.md","mtime":"2025-06-18T13:27:33.793Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:28:15.929Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
