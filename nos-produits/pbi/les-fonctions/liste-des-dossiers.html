@@ -836,9 +836,7 @@
                                 <h1 id="lister-mes-dossiers">Lister mes dossiers</h1>
 <p>Voici comment obtenir la liste des dossiers d'une agence.</p>
 <p>Il faut donc disposer de l'ID de cette agence.</p>
-<p>Les paramètres <code>first</code> et <code>after</code> concernent la pagination (ex: first: 100, after: 'abc').
-Le paramètre <code>after</code> correspond à la valeur retournée par l'API dans <code>pageInfo.endCursor</code>.
-<a href="https://graphql.org/learn/pagination/#pagination-and-edges" target="_blank">Voir la documentation sur la pagination par curseur</a></p>
+<h2 id="requête">Requête</h2>
 <pre><code class="lang-graphql"><span class="hljs-keyword">query</span> getInvitationsOrSubscriptions<span class="hljs-punctuation">(</span><span class="hljs-variable">$agencyId</span>: ID<span class="hljs-punctuation">!</span>, <span class="hljs-variable">$first</span>: Int, <span class="hljs-variable">$after</span>: String<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">{</span>
   node<span class="hljs-punctuation">(</span><span class="hljs-symbol">id</span><span class="hljs-punctuation">:</span> <span class="hljs-variable">$agencyId</span>) <span class="hljs-punctuation">{</span>
     <span class="hljs-punctuation">...</span>TenantsForRealtorFragment
@@ -913,6 +911,10 @@ Le paramètre <code>after</code> correspond à la valeur retournée par l'API da
     <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
+<h2 id="pagination">Pagination</h2>
+<p>Les paramètres <code>first</code> et <code>after</code> concernent la pagination (ex: first: 100, after: 'abc').</p>
+<p>Le paramètre <code>after</code> correspond à la valeur retournée par l'API dans <code>pageInfo.endCursor</code>.</p>
+<p><a href="https://graphql.org/learn/pagination/#pagination-and-edges" target="_blank">Voir la documentation sur la pagination par curseur</a></p>
 
                                 
                                 </section>
@@ -952,7 +954,7 @@ Le paramètre <code>after</code> correspond à la valeur retournée par l'API da
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Liste des dossiers","level":"3.2.2.19","depth":3,"previous":{"title":"Choisir le paiement par facture","level":"3.2.2.18","depth":3,"path":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","ref":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/pbi/les-fonctions/liste-des-dossiers.md","mtime":"2025-06-18T13:27:33.793Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:28:15.929Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Liste des dossiers","level":"3.2.2.19","depth":3,"previous":{"title":"Choisir le paiement par facture","level":"3.2.2.18","depth":3,"path":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","ref":"nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chollapse","hints"],"pluginsConfig":{"chollapse":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nos-produits/pbi/les-fonctions/liste-des-dossiers.md","mtime":"2025-06-18T13:43:48.410Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2025-06-18T13:44:00.587Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
