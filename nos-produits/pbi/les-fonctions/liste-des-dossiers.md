@@ -4,9 +4,7 @@ Voici comment obtenir la liste des dossiers d'une agence.
 
 Il faut donc disposer de l'ID de cette agence.
 
-Les paramètres `first` et `after` concernent la pagination (ex: first: 100, after: 'abc').
-Le paramètre `after` correspond à la valeur retournée par l'API dans `pageInfo.endCursor`.
-[Voir la documentation sur la pagination par curseur](https://graphql.org/learn/pagination/#pagination-and-edges)
+## Requête
 
 ```graphql
 query getInvitationsOrSubscriptions($agencyId: ID!, $first: Int, $after: String) {
@@ -83,3 +81,11 @@ fragment TenantsForRealtorFragment on Realtor {
     }
 }
 ```
+
+## Pagination
+
+Les paramètres `first` et `after` concernent la pagination (ex: first: 100, after: 'abc').
+
+Le paramètre `after` correspond à la valeur retournée par l'API dans `pageInfo.endCursor`.
+
+[Voir la documentation sur la pagination par curseur](https://graphql.org/learn/pagination/#pagination-and-edges)
