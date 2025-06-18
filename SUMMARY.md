@@ -55,3 +55,4 @@
     * [Valider un contrat](nos-produits/pbi/les-fonctions/valider-contrat.md)
     * [Abandonner le dossier](nos-produits/pbi/les-fonctions/abandonner-le-dossier.md)
     * [Choisir le paiement par facture](nos-produits/pbi/les-fonctions/choisir-le-paiement-par-facture.md)
+    * [Liste des dossiers](nos-produits/pbi/les-fonctions/liste-des-dossiers.md)
