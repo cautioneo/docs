@@ -20,6 +20,35 @@ fragment PageInfoFragment on PageInfo {
     startCursor
 }
 
+fragment TenantSubscriptionFragment on CautioneoSubscription {
+    archived
+    id
+    state
+    createdAt
+    updatedAt
+    leaseStartOn
+    renter {
+      user {
+        firstName
+        lastName
+        email
+      }
+    }
+    eligibility {
+      eligible
+      rentAmount
+      maxRentWithoutDeposit
+      maxRentWithDeposit
+      maxCashDeposit
+    }
+    contract {
+      reference
+    }
+    property {
+      rentAmount
+    }
+}
+
 fragment TenantPbiSubscriptionFragment on PbiSubscription {
     archived
     id
@@ -73,6 +102,7 @@ fragment TenantsForRealtorFragment on Realtor {
           id
           ...TenantInvitationFragment
           ...TenantPbiSubscriptionFragment
+          ...TenantSubscriptionFragment
         }
       }
       pageInfo {
